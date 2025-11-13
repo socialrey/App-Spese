@@ -9,7 +9,7 @@
     
     <!-- (Alpha 1) Meta tag per PWA iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Spese">
     
     <!-- (Alpha 1) Icona PWA (SVG in base64) -->
@@ -24,217 +24,53 @@
         /* CSS: Stile dell'app */
 /* --- (Alpha 65) GESTIONE TEMI --- */
 
-        /* TEMA 1: Pastello (Chiaro) - Default */
-        :root, body.theme-light-default {
-            --bg-color: #fdf6f0;
-            --card-bg: #ffffff;
-            --primary-color: #a78bfa; /* lilla pastello */
-            --primary-dark: #7c3aed;
-            --text-color: #3b3b3b;
-            --secondary-text-color: #7a7a7a;
-            --input-bg: #fefefe;
-            --border-color: #e0dede;
-            --monthly-icon-bg: #ede9fe;
-            --monthly-icon-color: #7c3aed;
-            --weekly-icon-bg: #e0f2fe;
-            --weekly-icon-color: #0284c7;
-            --green: #20c997;
-            --yellow: #ffc107;
-            --orange: #fd7e14;
-            --red: #dc3545;
-            --toast-bg: rgba(0, 0, 0, 0.8);
-        }
-
-        /* TEMA 2: Pastello (Scuro) */
-        body.theme-dark-default {
-            --bg-color: #121212;
-            --card-bg: #1e1e1e;
-            --primary-color: #a78bfa; /* lilla in dark */
-            --primary-dark: #7c3aed;
-            --text-color: #f1f1f1;
-            --secondary-text-color: #bbbbbb;
-            --input-bg: #1a1a1a;
-            --border-color: #333;
-            --monthly-icon-bg: #3b3b3b;
-            --monthly-icon-color: #a78bfa;
-            --weekly-icon-bg: #3b3b3b;
-            --weekly-icon-color: #0284c7;
-            --green: #20c997;
-            --yellow: #ffc107;
-            --orange: #fd7e14;
-            --red: #dc3545;
-            --toast-bg: rgba(255, 255, 255, 0.9);
-        }
-        
-        /* TEMA 3: Corporate (Chiaro) */
-        body.theme-light-corporate {
-            --bg-color: #f4f7fa; /* Grigio chiaro */
-            --card-bg: #ffffff;
-            --primary-color: #007bff; /* Blu Corporate */
+       /* --- (Alpha 83) TEMA PRO --- */
+       /* TEMA 1: Pro (Chiaro) - Default */
+        body, body.theme-pro-light {
+            --bg-color-top: #f6f6f8; /* Grigio chiaro pulito (non crema) */
+            --bg-color-bottom: #f0f0f2; /* Gradiente leggero */
+            --card-bg: rgba(255, 255, 255, 0.75); /* Vetro più pulito */
+            --glass-border: rgba(0, 0, 0, 0.08); /* Bordo vetro */
+            --primary-color: #007AFF; /* Blu "Pro" (Apple Style) */
             --primary-dark: #0056b3;
-            --text-color: #212529;
-            --secondary-text-color: #6c757d;
-            --input-bg: #ffffff;
-            --border-color: #dee2e6;
-            --monthly-icon-bg: #e6f2ff;
-            --monthly-icon-color: #007bff;
+            --text-color: #1d1d1f; /* Nero quasi puro */
+            --secondary-text-color: #6e6e73;
+            --input-bg: #f0f0f2;
+            --border-color: #d1d1d6;
+            --monthly-icon-bg: #e6f2ff; /* Sfondi icone (ora usati per il cerchio) */
+            --monthly-icon-color: #007AFF;
             --weekly-icon-bg: #e6f2ff;
-            --weekly-icon-color: #0056b3;
-            --green: #28a745;
-            --yellow: #ffc107;
-            --orange: #fd7e14;
-            --red: #dc3545;
-            --toast-bg: rgba(0, 0, 0, 0.8);
+            --weekly-icon-color: #007AFF;
+            --green: #34C759;
+            --yellow: #FF9500;
+            --orange: #FF9500;
+            --red: #FF3B30;
+            --toast-bg: rgba(0, 0, 0, 0.85);
         }
 
-        /* TEMA 4: Corporate (Scuro) */
-        body.theme-dark-corporate {
-            --bg-color: #1a202c; /* Blu scuro */
-            --card-bg: #2d3748;
-            --primary-color: #4299e1; /* Blu chiaro */
-            --primary-dark: #2b6cb0;
-            --text-color: #edf2f7;
-            --secondary-text-color: #a0aec0;
-            --input-bg: #2d3748;
-            --border-color: #4a5568;
-            --monthly-icon-bg: #4a5568;
-            --monthly-icon-color: #4299e1;
-            --weekly-icon-bg: #4a5568;
-            --weekly-icon-color: #2b6cb0;
-            --green: #38a169;
-            --yellow: #ecc94b;
-            --orange: #ed8936;
-            --red: #e53e3e;
-            --toast-bg: rgba(255, 255, 255, 0.9);
-        }
-
-        /* --- (Alpha 66) Nuovi Temi --- */
-        
-        /* TEMA 5: Laser (Chiaro) */
-        body.theme-light-laser {
-            --bg-color: #f8f9fa;
-            --card-bg: #ffffff;
-            --primary-color: #00e0e0; /* Ciano brillante */
-            --primary-dark: #00b3b3;
-            --text-color: #1a1a1a;
-            --secondary-text-color: #555;
-            --input-bg: #ffffff;
-            --border-color: #d0d0d0;
-            --monthly-icon-bg: #d6fcfc;
-            --monthly-icon-color: #00b3b3;
-            --weekly-icon-bg: #e0f2fe; /* Manteniamo un blu/ciano leggero qui */
-            --weekly-icon-color: #0284c7;
-            --green: #00ff00; /* Verde Lime */
-            --yellow: #ffff00; /* Giallo brillante */
-            --orange: #ff8800;
-            --red: #ff0055; /* Magenta/Rosso */
-            --toast-bg: rgba(0, 0, 0, 0.8);
-        }
-
-        /* TEMA 6: Laser (Scuro) */
-        body.theme-dark-laser {
-            --bg-color: #000000; /* Nero puro */
-            --card-bg: #0b0b0b; /* Quasi nero */
-            --primary-color: #00ffff; /* Ciano Neon */
-            --primary-dark: #00b3b3;
-            --text-color: #ffffff;
-            --secondary-text-color: #aaaaaa;
-            --input-bg: #111111;
-            --border-color: #333333;
-            --monthly-icon-bg: #1a2e2c;
-            --monthly-icon-color: #00ffff;
-            --weekly-icon-bg: #1a2e2c;
-            --weekly-icon-color: #00ffff;
-            --green: #00ff00; /* Verde Lime */
-            --yellow: #ffff00; /* Giallo brillante */
-            --orange: #ff8800;
-            --red: #ff00ff; /* Magenta Neon */
+        /* TEMA 2: Pro (Scuro) */
+        body.theme-pro-dark {
+            --bg-color-top: #101012; /* Gradiente scuro */
+            --bg-color-bottom: #000000; /* Nero puro */
+            --card-bg: #1A1B1E; /* (v104) Grigio scuro personalizzato */
+            --glass-border: rgba(255, 255, 255, 0.15); /* Bordo vetro */
+            --primary-color: #0A84FF; /* Blu "Pro" scuro */
+            --primary-dark: #007AFF;
+            --text-color: #f5f5f7;
+            --secondary-text-color: #8e8e93;
+            --input-bg: #1a1a1c;
+            --border-color: #38383a;
+            --monthly-icon-bg: #2c2c2e;
+            --monthly-icon-color: #0A84FF;
+            --weekly-icon-bg: #2c2c2e;
+            --weekly-icon-color: #0A84FF;
+            --green: #30D158;
+            --yellow: #FF9F0A;
+            --orange: #FF9F0A;
+            --red: #FF453A;
             --toast-bg: rgba(230, 230, 230, 0.9);
         }
-
-        /* TEMA 7: Synthwave (Chiaro) */
-        body.theme-light-synth {
-            --bg-color: #fff0f5; /* Rosa pallido */
-            --card-bg: #ffffff;
-            --primary-color: #ff00aa; /* Rosa Neon */
-            --primary-dark: #c40084;
-            --text-color: #331a38;
-            --secondary-text-color: #5a3a63;
-            --input-bg: #ffffff;
-            --border-color: #f0d9e5;
-            --monthly-icon-bg: #ffe6f5;
-            --monthly-icon-color: #ff00aa;
-            --weekly-icon-bg: #e0f2fe;
-            --weekly-icon-color: #0284c7;
-            --green: #00f0e0; /* Teal/Ciano */
-            --yellow: #f59e0b;
-            --orange: #f97316;
-            --red: #ef4444;
-            --toast-bg: rgba(0, 0, 0, 0.8);
-        }
-
-        /* TEMA 8: Synthwave (Scuro) */
-        body.theme-dark-synth {
-            --bg-color: #1a0c3b; /* Indaco scuro */
-            --card-bg: #2b1d4f;
-            --primary-color: #ff00aa; /* Rosa Neon */
-            --primary-dark: #c40084;
-            --text-color: #f0e6f7;
-            --secondary-text-color: #b0a0c4;
-            --input-bg: #2b1d4f;
-            --border-color: #4a3a6f;
-            --monthly-icon-bg: #4a3a6f;
-            --monthly-icon-color: #ff00aa;
-            --weekly-icon-bg: #4a3a6f;
-            --weekly-icon-color: #00f0e0; /* Teal/Ciano */
-            --green: #00f0e0;
-            --yellow: #f59e0b;
-            --orange: #f97316;
-            --red: #ef4444;
-            --toast-bg: rgba(255, 255, 255, 0.9);
-        }
-        
-        /* TEMA 9: Graphite (Chiaro) */
-        body.theme-light-graphite {
-            --bg-color: #f5f5f5; /* Grigio chiarissimo */
-            --card-bg: #ffffff;
-            --primary-color: #f97316; /* Arancione */
-            --primary-dark: #ea580c;
-            --text-color: #262626;
-            --secondary-text-color: #737373;
-            --input-bg: #ffffff;
-            --border-color: #e5e5e5;
-            --monthly-icon-bg: #fff7ed;
-            --monthly-icon-color: #f97316;
-            --weekly-icon-bg: #f3f4f6;
-            --weekly-icon-color: #4b5563;
-            --green: #22c55e;
-            --yellow: #eab308;
-            --orange: #f97316;
-            --red: #ef4444;
-            --toast-bg: rgba(0, 0, 0, 0.8);
-        }
-
-        /* TEMA 10: Graphite (Scuro) */
-        body.theme-dark-graphite {
-            --bg-color: #171717; /* Grigio scuro */
-            --card-bg: #262626;
-            --primary-color: #f97316; /* Arancione */
-            --primary-dark: #ea580c;
-            --text-color: #f5f5f5;
-            --secondary-text-color: #a3a3a3;
-            --input-bg: #262626;
-            --border-color: #404040;
-            --monthly-icon-bg: #404040;
-            --monthly-icon-color: #f97316;
-            --weekly-icon-bg: #404040;
-            --weekly-icon-color: #e5e7eb;
-            --green: #22c55e;
-            --yellow: #eab308;
-            --orange: #f97316;
-            --red: #ef4444;
-            --toast-bg: rgba(255, 255, 255, 0.9);
-        }
+    
         /* --- FINE GESTIONE TEMI --- */
 		/* Dark mode Style */
 
@@ -245,45 +81,120 @@ body.theme-dark label {
   background-color: var(--input-bg);
 }
 
-
+@keyframes screenFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.97);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
 
         body {
-		transition: background-color 0.3s ease, color 0.3s ease;
+            /* (Alpha 99) Sfondo spostato su pseudo-elemento (Fix iPhone Overscroll) */
+            background-color: var(--bg-color-top); /* Colore di base (fallback) */
+            min-height: 100vh; 
+            position: relative; /* Necessario per lo z-index */
 
+            /* (Alpha 100) Aggiunge padding per coprire l'area notch/camera */
+            padding-top: env(safe-area-inset-top);
+            
+            transition: background-color 0.3s ease, color 0.3s ease;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
-            background-color: var(--bg-color); /* (Alpha 41) */
             color: var(--text-color);
-            -webkit-user-select: none; /* Disabilita selezione testo */
+            -webkit-user-select: none; 
             user-select: none;
-            -webkit-tap-highlight-color: transparent; /* Rimuove flash al tocco */
+            -webkit-tap-highlight-color: transparent; 
+        }
+        /* (Alpha 99) Sfondo "Fixed" con pseudo-elemento */
+        body::before {
+            content: '';
+            position: fixed; /* Fissa allo schermo, non scorre */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            
+            /* Applica qui il gradiente */
+            background-image: linear-gradient(180deg, var(--bg-color-top), var(--bg-color-bottom));
+            background-repeat: no-repeat;
+            
+            z-index: -1; /* Mette lo sfondo DIETRO a tutto il contenuto */
+        }
+        /* (Alpha 99) Sfondo "Fixed" con pseudo-elemento */
+        body::before {
+            content: '';
+            position: fixed; /* Fissa allo schermo, non scorre */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            
+            /* Applica qui il gradiente */
+            background-image: linear-gradient(180deg, var(--bg-color-top), var(--bg-color-bottom));
+            background-repeat: no-repeat;
+            
+            z-index: -1; /* Mette lo sfondo DIETRO a tutto il contenuto */
         }
 
         .container {
+            /* (Alpha 99) Abilita lo scroll verticale solo per il contenuto */
+            height: 100vh;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch; /* Scrolling fluido su iOS */
+
             padding: 15px;
-            padding-bottom: 80px; /* Spazio per la barra home di iOS */
+            /* (Alpha 94) Aumentiamo il padding inferiore per fare spazio alla barra */
+            padding-bottom: 100px; 
             max-width: 600px;
             margin: 0 auto;
+            /* (Alpha 86) Forza il contesto di impilamento (z-index) */
+            position: relative;
+            box-sizing: border-box; /* Assicura che il padding sia incluso nell'altezza */
         }
 
         .hidden {
             display: none !important;
         }
 
-        /* (Alpha 41) Header ridisegnato con gradiente */
+        /* (Alpha 74) Applica l'animazione a tutte le "schermate" */
+        #home-screen, #add-expense-category-screen, #manage-categories-screen,
+        #add-expense-amount-screen, #view-expenses-screen, #category-detail-screen,
+        #edit-expense-screen, #edit-category-screen, #monthly-history-screen,
+        #weekly-detail-screen, #weekly-category-detail-screen, #chart-screen {
+            
+            /* Applica l'animazione solo quando NON è nascosta */
+            animation: screenFadeIn 0.25s ease-out;
+        }
+
+        /* (Alpha 77) Header (Sticky + Gradient) e Padding corretto */
         .header {
-            /* (Alpha 55) Modificato per layout icone */
             display: grid;
-            grid-template-columns: 1fr auto; /* Colonna sinistra (titolo/data), colonna destra (icone/budget) */
+            grid-template-columns: 1fr auto; 
             grid-template-rows: auto auto;    
             align-items: start; 
 
+            /* (Alpha 77) Ripristinato gradiente per leggibilità */
             background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-            color: white;
-            padding: 20px 15px 30px 15px;
-            border-radius: 0 0 24px 24px; /* Angoli arrotondati solo in basso */
-            margin: -15px -15px 0 -15px; /* Si estende ai lati */
+            background-size: 200% 200%; 
+            animation: gradientMove 8s ease infinite; 
+            color: white; /* Il testo bianco ora è corretto */
+            
+            /* (Alpha 77) Padding ridotto */
+            padding: 20px 15px 20px 15px; 
+            
+            border-radius: 0 0 24px 24px; 
+            margin: -15px -15px 0 -15px; 
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+            /* (Alpha 76) Mantenuto STICKY */
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         /* (Alpha 55) Rimosso .header-top */
@@ -367,17 +278,25 @@ body.theme-dark label {
             border-radius: 12px;
             padding: 16px;
             margin-bottom: 20px;
-            box-shadow: var(--card-shadow); /* (Alpha 40) Ombra moderna */
-            border: none; /* (Alpha 40) Rimuove bordi predefiniti */
+            box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.1); /* (Alpha 74) Ombra default */
         }
         
+        /* (Alpha 77) Rimosso .header dal blur, ora è colorato */
+        .card,
+        .total-box,
+        .modal-content {
+            -webkit-backdrop-filter: blur(14px);
+            backdrop-filter: blur(14px);
+            /* (Alpha 83) Aggiunto bordo "vetro" */
+            border: 1px solid var(--glass-border);
+        }   
         /* (Alpha 41) Riquadri home spostati in su */
         .summary-cards {
             display: grid;
             grid-template-columns: 1fr; 
             gap: 15px; 
             margin-bottom: 20px; 
-            margin-top: -20px; /* (Alpha 41) Sovrapposizione header */
+            margin-top: 20px; /* (Alpha 77) Corretto overlap con header sticky */
             position: relative;
             z-index: 10;
         }
@@ -395,27 +314,28 @@ body.theme-dark label {
             gap: 15px; /* (Alpha 41) Spazio tra icona e testo */
         }
 
-        /* (Alpha 41) Stili icone */
+        /* (Alpha 83) Icone Home "pulite" (via il cerchio) */
         .total-box-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
+            /* Non più un cerchio, solo un contenitore */
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-shrink: 0; /* Evita che l'icona si rimpicciolisca */
+            flex-shrink: 0; 
         }
-        .total-box-icon svg {
-            width: 24px;
-            height: 24px;
+        /* (Alpha 103) Icone IMG ridimensionate per matchare le Emoji */
+        .summary-icon-img {
+            width: 44px;
+            height: 44px;
+            /* Le tue icone hanno già gli angoli smussati, 
+               ma questo aiuta a uniformare se necessario */
+            border-radius: 8px; 
         }
-        #monthly-icon-bg {
-            background-color: var(--monthly-icon-bg);
-            color: var(--monthly-icon-color);
-        }
+
+        /* (Alpha 102) Rimuove gli sfondi colorati dai contenitori */
+        #monthly-icon-bg,
         #weekly-icon-bg {
-            background-color: var(--weekly-icon-bg);
-            color: var(--weekly-icon-color);
+            background-color: transparent;
+            color: unset;
         }
         .total-box-text {
             text-align: left; /* (Alpha 41) Testo allineato a sx */
@@ -660,7 +580,7 @@ body.theme-dark label {
             vertical-align: middle;
         }
 
-        .input-group input, .input-group textarea, .input-group select { 
+        .input-group input:not([type="checkbox"]), .input-group textarea, .input-group select { 
             width: 100%;
             padding: 12px;
             border: 1px solid var(--border-color); /* (Alpha 40) Bordo leggero */
@@ -670,7 +590,7 @@ body.theme-dark label {
             box-sizing: border-box; 
         }
         
-        .input-group input:focus, .input-group textarea:focus, .input-group select:focus {
+        .input-group input:not([type="checkbox"]):focus, .input-group textarea:focus, .input-group select:focus {
              background-color: var(--card-bg);
              border-color: var(--primary-color);
              outline: none;
@@ -738,7 +658,7 @@ body.theme-dark label {
   background-color: rgba(0, 0, 0, 0.4);
 }
         .modal-content {
-            background-color: white;
+            background-color: var(--card-bg); /* (Alpha 76) Sfondo vetro */
             padding: 20px;
             border-radius: 12px;
             width: 85%;
@@ -972,49 +892,12 @@ body.theme-dark #toast-message {
   color: var(--text-color);
 }
 
-/* Forza svg / icone a rispettare il colore del testo (currentColor) in dark mode
-   Serve per le SVG che hanno fill/stroke fissi: li sovrascrive quando possibile. */
-body.theme-dark .summary-icon-item svg,
-body.theme-dark .icon-select-item svg,
-body.theme-dark .total-box-icon svg,
-body.theme-dark .manage-category-list svg,
-body.theme-dark .category-item svg {
-  fill: currentColor !important;
-  stroke: currentColor !important;
-}
-
-/* Imposta il colore corrente per gli elementi icona in dark mode (scegli il colore desiderato) */
-body.theme-dark .summary-icon-item,
-body.theme-dark .icon-select-item,
-body.theme-dark .total-box-icon,
-body.theme-dark .category-item {
-  color: var(--text-color); /* le svg con currentColor erediteranno questo colore */
-}
-
-/* Se ci sono SVG inline con fill hardcoded (es. #1f2937), questo fallback cerca di sovrascrivere */
-body.theme-dark svg [fill="#1f2937"],
-body.theme-dark svg [stroke="#1f2937"] {
-  fill: currentColor !important;
-  stroke: currentColor !important;
-}
-
 /* Input/label/select già gestiti; assicuriamoci che il testo del modal di conferma (bottoni) sia leggibile */
 body.theme-dark .modal-actions .btn,
 body.theme-dark .modal-actions .btn-secondary,
 body.theme-dark .modal-actions .btn-danger {
   color: white;
 }
-/* Fix testo invisibile in dark mode */
-body.theme-dark input,
-body.theme-dark textarea,
-body.theme-dark select,
-body.theme-dark .category-name,
-body.theme-dark .expense-list-item,
-body.theme-dark .expense-category-item,
-body.theme-dark .category-summary-item {
-  color: var(--text-color) !important;
-}
-
 /* Sfondo dei control form per contrasto in dark mode */
 body.theme-dark input,
 body.theme-dark textarea,
@@ -1037,13 +920,178 @@ body.theme-dark #toast-message {
   color: var(--text-color) !important;
 }
 
-/* Sicurezza: sovrascrive eventuali fill/stroke scuri nelle SVG inline */
-body.theme-dark svg [fill],
-body.theme-dark svg [stroke] {
-  fill: currentColor !important;
-  stroke: currentColor !important;
-}
+/* (Alpha 78, 85 & 91) Aggiunge spazio sotto l'header sticky */
+        #history-selector-group, /* (Alpha 91) Sostituito #monthly-history-grid */
+        #view-expenses-grid,
+        #no-expenses-message,
+        #category-selection-grid,
+        #manage-categories-screen #existing-categories-block, /* (Alpha 85) */
+        #data-screen .import-export-section, /* (Alpha 85) */
+        #edit-category-screen .card:first-of-type,
+        #add-expense-amount-screen .card:first-of-type,
+        #expense-list,
+        #weekly-detail-list,
+        #weekly-category-detail-list,
+        #edit-expense-screen .card:first-of-type,
+        #chart-screen .card:first-of-type {
+            margin-top: 20px;
+        }
 
+/* --- (Alpha 94) Stile Barra di Navigazione --- */
+        .bottom-nav-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 65px; /* Altezza base */
+            background-color: var(--card-bg);
+            border-top: 1px solid var(--glass-border);
+            -webkit-backdrop-filter: blur(14px);
+            backdrop-filter: blur(14px);
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1000;
+            
+            /* Spazio per la home bar di iOS */
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+        
+        .nav-btn {
+            background-color: transparent;
+            border: none;
+            padding: 4px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            color: var(--secondary-text-color);
+            cursor: pointer;
+            transition: color 0.2s;
+            height: 100%;
+        }
+        
+        .nav-btn svg {
+            width: 26px;
+            height: 26px;
+            stroke-width: 1.5;
+        }
+        
+        .nav-btn span {
+            font-size: 10px;
+            margin-top: 4px;
+        }
+        
+        .nav-btn.active {
+            color: var(--primary-color);
+        }
+        
+        .nav-btn:active {
+            transform: scale(0.95);
+        }
+        
+        /* Stile Speciale Pulsante Aggiungi */
+        .nav-btn-add-special {
+            /* Sovrascrive il colore per renderlo sempre primario */
+            color: var(--primary-color);
+        }
+        .nav-btn-add-special svg {
+            width: 40px; /* Più grande */
+            height: 40px;
+            stroke-width: 1.5;
+        }
+        
+        /* Adatta il container per non finire sotto la barra */
+        .container {
+             /* Aumentiamo il padding inferiore per fare spazio alla barra */
+             padding-bottom: 100px; 
+        }
+        /* (Alpha 96) Rimuove il testo dal pulsante "Aggiungi" per fare spazio */
+        .nav-btn-add-special span {
+            display: none;
+        }
+        
+        /* (Alpha 96) Centra l'icona "+" ora che il testo è sparito */
+        .nav-btn-add-special svg {
+            width: 44px; /* Leggermente più grande per riempire lo spazio */
+            height: 44px;
+        }
+        /* --- (Alpha 98) Stile Overlays Fissi --- */
+        .fixed-overlay-container {
+            position: fixed;
+            bottom: 80px; /* Altezza tab bar (65px) + 15px spazio */
+            left: 15px;
+            right: 15px;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between; /* Spinge i 2 elementi ai lati */
+            align-items: center;
+            pointer-events: none; /* Rende il contenitore "invisibile" ai click */
+            padding-bottom: env(safe-area-inset-bottom); /* Spazio per iOS Home Bar */
+        }
+        
+        /* Rende cliccabili solo i figli */
+        .fixed-overlay-container > * {
+            pointer-events: auto;
+        }
+
+        #app-version-fixed {
+            font-size: 11px;
+            color: var(--secondary-text-color);
+            opacity: 0.7;
+        }
+        
+        /* Nascondi la versione se non siamo in Home */
+        #home-screen.hidden + .fixed-overlay-container #app-version-fixed {
+            display: none;
+        }
+
+        #theme-toggle-btn {
+            background-color: var(--card-bg);
+            color: var(--secondary-text-color);
+            border: 1px solid var(--glass-border);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            -webkit-backdrop-filter: blur(14px);
+            backdrop-filter: blur(14px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: all 0.2s;
+        }
+        #theme-toggle-btn:active {
+            transform: scale(0.95);
+        }
+        #theme-toggle-btn span {
+            font-size: 24px;
+        }
+    /* --- (Alpha 100) Stile Header "App" (Solo Tema Scuro) --- */
+        body.theme-pro-dark .header {
+            /* Sfondo grigio scuro (campionato dalla foto) */
+            background: #1C1C1E; 
+            /* Rimuove l'animazione del gradiente blu */
+            animation: none;
+            
+            /* (Alpha 100) Aggiunge un bordo inferiore per staccare */
+            border-bottom: 1px solid #333;
+        }
+
+        body.theme-pro-dark .header h1 {
+            /* (v100-fix) Aggiunto 'color: transparent' per rimuovere warning */
+            color: transparent; 
+            
+            /* Gradiente per il testo (campionato dalla foto) */
+            background: linear-gradient(90deg, #5A7BED, #C764E3);
+            -webkit-background-clip: text; /* Per Chrome/Safari */
+            -webkit-text-fill-color: transparent; /* Per Chrome/Safari */
+            background-clip: text; /* Standard (per Firefox) */
+            /* La riga 'text-fill-color' è stata rimossa perché non è standard */
+        }    
     </style>
     
 </head>
@@ -1075,9 +1123,7 @@ body.theme-dark svg [stroke] {
                 <div class="total-box" id="monthly-box">
                     <!-- (Alpha 41) Icona Mese -->
                     <div class="total-box-icon" id="monthly-icon-bg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0h18M9 12.75h6m-6 3h6" />
-                        </svg>
+                      <img src="icone/30.png" alt="Icona 30" class="summary-icon-img" />
                     </div>
                     <div class="total-box-text">
                         <h3>Questo Mese</h3>
@@ -1087,11 +1133,8 @@ body.theme-dark svg [stroke] {
                 </div>
                 
                 <div class="total-box" id="weekly-box">
-                    <!-- (Alpha 41) Icona Settimana -->
                     <div class="total-box-icon" id="weekly-icon-bg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3v2.25M16.5 3v2.25m-12 5.25h15m-15 0a2.25 2.25 0 0 1-2.25-2.25V6.75A2.25 2.25 0 0 1 6.75 4.5h10.5a2.25 2.25 0 0 1 2.25 2.25v3.75c0 1.242-.993 2.25-2.25 2.25h-10.5a2.25 2.25 0 0 1-2.25-2.25Zm0 0h15m-15 0v6.75A2.25 2.25 0 0 0 6.75 21h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75m0 0h15" />
-                        </svg>
+                       <img src="icone/7.png" alt="Icona 7" class="summary-icon-img" />
                     </div>
                     <div class="total-box-text">
                         <h3>Questa Settimana</h3>
@@ -1100,45 +1143,16 @@ body.theme-dark svg [stroke] {
                     </div>
                 </div>
             </div>
-            
-            <!-- Pulsanti Azione (Alpha 3 / Alpha 4 / Alpha 36) -->
-            <div class="actions">
-                <button class="btn" id="add-expense-btn">Aggiungi Spesa</button>
-                <button class="btn btn-secondary" id="manage-categories-btn-home">Gestione Categorie</button> <!-- (Alpha 4) -->
-                <!-- (Alpha 36) Nuovo Pulsante Grafico -->
-                <button class="btn btn-secondary" id="view-chart-btn">Grafico Spese</button>
-            </div>
-            
-            <!-- (Alpha 65) Versione App -->
-		<div class="input-group" style="align-items: center; gap: 10px; margin-bottom: 10px;">
-          <label for="theme-selector" style="margin: 0; font-weight: 500;">Tema:</label>
-          <select id="theme-selector" style="width: auto; flex-grow: 1; padding: 8px; font-size: 14px;">
-            <option value="theme-light-default">Tema Principale (Chiaro)</option>
-            <option value="theme-dark-default">Tema Principale (Scuro)</option>
-            <option value="theme-light-corporate">Tema Corporate (Chiaro)</option>
-            <option value="theme-dark-corporate">Tema Corporate (Scuro)</option>
-            <option value="theme-light-laser">Tema Laser (Chiaro)</option>
-            <option value="theme-dark-laser">Tema Laser (Scuro)</option>
-            <option value="theme-light-synth">Synthwave (Chiaro)</option>
-            <option value="theme-dark-synth">Synthwave (Scuro)</option>
-            <option value="theme-light-graphite">Graphite (Chiaro)</option>
-            <option value="theme-dark-graphite">Graphite (Scuro)</option>
-          </select>
-          <span id="theme-icon" style="font-size: 20px; margin-left: 5px;">🎨</span>
-        </div>
-
-		<div id="app-version">V0.0.0</div>
-            
+                   
         </div>
 
         <!-- Schermata Aggiungi Spesa (Scelta Categoria) -->
         <div id="add-expense-category-screen" class="hidden">
             <div class="header">
-                 <!-- (Alpha 41) Header semplice per schermate secondarie -->
                  <div class="header-top">
                     <div>
                         <h1>Scegli Categoria</h1>
-                        <p>Tocca una categoria per aggiungere una spesa.</p>
+                        <p>Seleziona una categoria per la tua spesa.</p>
                     </div>
                  </div>
             </div>
@@ -1152,9 +1166,8 @@ body.theme-dark svg [stroke] {
         </div>
         
         <!-- Schermata Gestione Categorie (Alpha 1 / Alpha 16) -->
-        <div id="manage-categories-screen" class="hidden">
+<div id="manage-categories-screen" class="hidden">
             <div class="header">
-                <!-- (Alpha 41) Header semplice per schermate secondarie -->
                  <div class="header-top">
                     <div>
                         <h1>Gestisci Categorie</h1>
@@ -1163,42 +1176,36 @@ body.theme-dark svg [stroke] {
                  </div>
             </div>
 
-            <!-- (Alpha 28) Sezione Budget Mensile Totale -->
-            <div class="card">
-                 <h3>Budget Mensile Totale</h3>
-                 <div class="input-group">
-                     <label for="global-monthly-budget">Imposta Budget (€)</label>
-                     <input type="number" id="global-monthly-budget" placeholder="Es. 500" step="0.01">
-                 </div>
-                 <button class="btn" id="save-global-budget-btn">Salva Budget</button>
+            <div id="existing-categories-block">
+                <h3>Categorie Esistenti</h3>
+                <div class="category-grid" id="manage-category-list">
+                    </div>
             </div>
-            <!-- Fine Sezione Budget -->
 
-            <div class="card">
+            <div class="card" style="margin-top: 20px;">
                  <h3>Aggiungi Nuova Categoria</h3>
                 <div class="input-group">
                     <label for="new-category-name">Nuova Categoria</label>
                     <input type="text" id="new-category-name" placeholder="Es. Benzina">
                 </div>
-                <!-- --- (Alpha 16) Aggiunta Scelta Tipo Budget --- -->
-                <!-- --- (Alpha 22) Modificato per Categoria Predefinita --- -->
                 <div class="input-group">
                      <label>
-                        <!-- (Alpha 39) Testo modificato -->
                         <input type="checkbox" id="new-category-is-preset"> Spesa Fissa?
                     </label>
                 </div>
                  <div class="input-group hidden" id="new-category-preset-value-group">
-                     <!-- (Alpha 39) Testo modificato -->
                     <label for="new-category-preset-value">Importo Fisso (€)</label>
                     <input type="number" id="new-category-preset-value" placeholder="Es. 10" step="0.01">
                 </div>
-                <!-- (Alpha 55) Selettore Icone -->
+                <div class="input-group hidden" id="new-category-recurring-group">
+                  <label>
+                    <input type="checkbox" id="new-category-recurring"> Spesa Ricorrente (ogni mese)
+                  </label>
+                </div>
                 <div class="input-group hidden" id="new-category-icon-select-group">
                     <label>Icona</label>
                     <div class="icon-select-grid" id="new-category-icon-select">
-                        <!-- Icone caricate da JS -->
-                    </div>
+                        </div>
                 </div>
                 <div id="new-category-budget-fields">
                     <div class="input-group">
@@ -1214,26 +1221,18 @@ body.theme-dark svg [stroke] {
                         <input type="number" id="new-category-budget-value" placeholder="Es. 50" step="0.01">
                     </div>
                 </div>
-                <!-- --- Fine Modifica --- -->
                 <button class="btn" id="save-category-btn">Aggiungi Categoria</button>
             </div>
-             <h3>Categorie Esistenti</h3>
-             <div class="category-grid" id="manage-category-list">
-                <!-- Lista categorie modificabili caricata da JS -->
-            </div>
             
-            <!-- (Alpha 26) Sezione Import/Export -->
-            <div class="import-export-section">
-                <h3>Backup Dati</h3>
-                <div class="import-export-actions">
-                    <button class="btn btn-secondary" id="import-btn">Importa Dati</button>
-                    <button class="btn btn-secondary" id="export-btn">Esporta Dati</button>
-                    <input type="file" id="import-file-input" accept=".json">
-                </div>
+            <div class="card">
+                 <h3>Budget Mensile</h3> <div class="input-group">
+                     <label for="global-monthly-budget">Imposta Budget (€)</label>
+                     <input type="number" id="global-monthly-budget" placeholder="Es. 500" step="0.01">
+                 </div>
+                 <button class="btn" id="save-global-budget-btn">Salva Budget</button>
             </div>
-            
             <div class="actions" style="margin-top: 20px;">
-                <button class="btn btn-secondary" id="back-to-home-from-manage-btn">Torna alla Home</button> <!-- (Alpha 5) Corretto pulsante indietro -->
+                <button class="btn btn-secondary" id="back-to-home-from-manage-btn">Torna alla Home</button>
             </div>
         </div>
         
@@ -1380,28 +1379,29 @@ body.theme-dark svg [stroke] {
         <!-- (Alpha 3) Nuova Schermata Storico Mensile -->
         <div id="monthly-history-screen" class="hidden">
             <div class="header">
-                 <!-- (Alpha 41) Header semplice per schermate secondarie -->
                  <div class="header-top">
                     <div>
                         <h1 id="monthly-history-title">Riepilogo del Mese</h1>
-                        <!-- (Alpha 39) Testo modificato -->
                         <p>Totali per settimana (TUTTE LE SPESE). Clicca per i dettagli.</p>
                     </div>
                  </div>
             </div>
             
-            <div class="category-grid" id="monthly-history-grid">
-                 <!-- Totali settimanali caricati da JS -->
+            <div class="input-group" id="history-selector-group" style="grid-template-columns: 1fr 1fr; gap: 10px; display: grid; margin-bottom: 12px;">
+                <select id="history-month-select" style="padding: 12px; font-size: 16px; text-align: center; border-radius: 8px;">
+                    </select>
+                <select id="history-year-select" style="padding: 12px; font-size: 16px; text-align: center; border-radius: 8px;">
+                    </select>
             </div>
-
-              <!-- ALPHA 71 FILTRO MESE/ANNO -->  
-            <div class="actions" style="margin-top: 20px;">
-                <div class="input-group" style="grid-template-columns: 1fr 1fr; gap: 10px; display: grid; margin-bottom: 12px;">
-                    <select id="history-month-select" style="padding: 12px; font-size: 16px; text-align: center; border-radius: 8px;">
-                        </select>
-                    <select id="history-year-select" style="padding: 12px; font-size: 16px; text-align: center; border-radius: 8px;">
-                        </select>
+            
+            <div class="category-grid" id="monthly-history-grid">
+                 </div>
+            
+            <h3 style="margin-top: 30px; margin-bottom: 15px; padding-left: 5px;">Riepilogo Categorie del Mese</h3>
+            <div id="monthly-category-summary-list">
                 </div>
+
+            <div class="actions" style="margin-top: 20px;">
                 <button class="btn btn-secondary" id="back-to-home-from-monthly-btn">Torna alla Home</button>
             </div>
         </div>
@@ -1470,6 +1470,13 @@ body.theme-dark svg [stroke] {
                     <label for="edit-expense-note">Nota (opzionale)</label>
                     <textarea id="edit-expense-note" placeholder="Es. Spesa settimanale"></textarea>
                 </div>
+                
+                <div class="input-group">
+                    <label for="edit-expense-category-select">Sposta Categoria</label>
+                    <select id="edit-expense-category-select">
+                        </select>
+                </div>
+                
             </div>
             <div class="actions" style="grid-template-columns: 1fr 1fr; gap: 12px;">
                 <button class="btn btn-danger" id="cancel-edit-btn">Annulla</button>
@@ -1490,7 +1497,7 @@ body.theme-dark svg [stroke] {
                  <div class="header-top">
                     <div>
                         <h1>Grafico Spese</h1>
-                        <p>Analisi delle spese settimanali (solo spese variabili).</p>
+                        <p>Suddivisione delle spese per categoria.</p>
                     </div>
                  </div>
             </div>
@@ -1514,15 +1521,48 @@ body.theme-dark svg [stroke] {
             </div>
             
             <div id="chart-container">
-                <canvas id="expense-chart"></canvas>
-				<canvas id="pie-chart" style="margin-top:20px; max-height:400px;"></canvas>			
+                <canvas id="pie-chart" style="margin-top:20px; max-height:400px;"></canvas>			
             </div>
 
             <div class="actions" style="margin-top: 20px;">
                 <button class="btn btn-secondary" id="back-to-home-from-chart-btn">Torna alla Home</button>
             </div>
         </div>
+<div id="data-screen" class="hidden">
+            <div class="header">
+                 <div class="header-top">
+                    <div>
+                        <h1>Backup e Dati</h1>
+                        <p>Importa o esporta i dati della tua app.</p>
+                    </div>
+                 </div>
+            </div>
+            <!-- (Alpha 26) Sezione Import/Export -->
+            <div class="import-export-section">
+                <h3>Backup Dati</h3>
+                <div class="import-export-actions">
+                    <button class="btn btn-secondary" id="import-btn">Importa Dati</button>
+                    <button class="btn btn-secondary" id="export-btn">Esporta Dati</button>
+                    <input type="file" id="import-file-input" accept=".json">
+                </div>
+            </div>
 
+            <div class="manual-transfer-section" style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-color);">
+                <h3>Trasferimento Manuale (Copia/Incolla)</h3>
+                <p style="font-size: 14px; color: var(--secondary-text-color);">Per trasferire dati tra dispositivi/browser (es. da Dropbox a Netlify).</p>
+                <div class="input-group">
+                    <label for="manual-data-textarea">Testo di Backup/Importazione</label>
+                    <textarea id="manual-data-textarea" style="height: 120px; font-size: 10px; line-height: 1.2; width: 100%;" placeholder="1. Clicca 'Mostra Dati' e Copia.&#10;2. Incolla in questo box sulla nuova app.&#10;3. Clicca 'Importa Dati Incollati'."></textarea>
+                </div>
+                <div class="import-export-actions">
+                    <button class="btn btn-secondary" id="manual-export-show-btn">Mostra Dati</button>
+                    <button class="btn" id="manual-import-process-btn">Importa Dati Incollati</button>
+                </div>
+            </div>
+            <div class="actions" style="margin-top: 20px;">
+                <button class="btn btn-secondary" id="back-to-home-from-data-btn">Torna alla Home</button>
+            </div>
+        </div>
     </div>
     
     <!-- Modale di Conferma Personalizzato (Alpha 1 / Alpha 27) -->
@@ -1539,57 +1579,91 @@ body.theme-dark svg [stroke] {
     
     <!-- (Alpha 27) Toast Message -->
     <div id="toast-message">Messaggio Toast</div>
+    <div class="fixed-overlay-container">
+        <div id="app-version-fixed">V0.0.0</div>
+        <button id="theme-toggle-btn"><span>🌙</span></button>
+    </div>
+<nav class="bottom-nav-bar">
+        <button class="nav-btn" id="nav-btn-home">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+            <span>Home</span>
+        </button>
+        <button class="nav-btn" id="nav-btn-chart">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h12A2.25 2.25 0 0 0 20.25 14.25V3M3.75 21h16.5M3.75 3h16.5M3.75 3v.007c0 .14.114.257.257.257H6.31a.257.257 0 0 0 .257-.257V3m0 3.75v.007c0 .14.114.257.257.257H6.31a.257.257 0 0 0 .257-.257V6.75m0 3.75v.007c0 .14.114.257.257.257H6.31a.257.257 0 0 0 .257-.257V10.5m-3.75 6.75h16.5c.621 0 1.125-.504 1.125-1.125V6.75c0-.621-.504-1.125-1.125-1.125H3.75c-.621 0-1.125.504-1.125 1.125v9.375c0 .621.504 1.125 1.125 1.125Z" />
+            </svg>
+            <span>Grafico</span>
+        </button>
+        <button class="nav-btn nav-btn-add-special" id="nav-btn-add">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            <span>Aggiungi</span>
+        </button>
+        <button class="nav-btn" id="nav-btn-data">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+            <span>Dati</span>
+        </button>
+        <button class="nav-btn" id="nav-btn-manage">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h3m-3 12h3m-6-6h9" />
+            </svg>
 
-    <script>
-        // JAVASCRIPT: Tutta la logica dell'app (versione localStorage)
+             <span>Gestisci</span>
+        </button>
+
+    </nav>
+<script>
+        // JAVASCRIPT: Tutta la logica dell'app (Versione v92 - Stabile)
         
         document.addEventListener('DOMContentLoaded', () => {
-		Chart.register(ChartDataLabels);
+            Chart.register(ChartDataLabels); // Registra il plugin per le etichette
 
-            // (Alpha 48) Blocco Service Worker completamente Rimosso per evitare errori.
-            
             // (Alpha 55) Aggiunte icone SVG
             const PRESET_ICONS = {
-  'home': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-          fill="#20c997" stroke="#0f5132" stroke-width="1.5">
-    <path d="M3 12l9-9 9 9v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>
-  </svg>`,
-
-  'car': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-          fill="#9333ea" stroke="#6b21a8" stroke-width="1.5">
-    <path d="M3 13l2-5a2 2 0 0 1 1.9-1.3h10.2a2 2 0 0 1 1.9 1.3l2 5v6a1 1 0 0 1-1 1h-1a2 2 0 0 1-4 0H9a2 2 0 0 1-4 0H4a1 1 0 0 1-1-1v-6z"/>
-    <circle cx="7.5" cy="18.5" r="1.5" fill="#1f2937"/>
-    <circle cx="16.5" cy="18.5" r="1.5" fill="#1f2937"/>
-  </svg>`,
-
-  'phone': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-          fill="#fd7e14" stroke="#7c2d12" stroke-width="1.5">
-    <path stroke-linecap="round" stroke-linejoin="round" 
-          d="M2.25 6.75c0-1.243 1.007-2.25 2.25-2.25h2.25c.621 0 1.152.448 1.227 1.065l.348 2.784a1.125 1.125 0 01-.324.945l-1.26 1.26a16.5 16.5 0 007.29 7.29l1.26-1.26c.267-.267.66-.39 1.045-.324l2.784.348c.617.075 1.065.606 1.065 1.227V19.5c0 1.243-1.007 2.25-2.25 2.25h-1.5C8.268 21.75 2.25 15.732 2.25 8.25v-1.5z"/>
-  </svg>`,
-
-  'card': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-          fill="#4A69E2" stroke="#1e3a8a" stroke-width="1.5">
-    <rect x="2" y="5" width="20" height="14" rx="2" ry="2"/>
-    <line x1="2" y1="10" x2="22" y2="10" stroke="#fff" stroke-width="1.5"/>
-  </svg>`,
-
-  'euro': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-          fill="#ffc107" stroke="#b45309" stroke-width="1.5">
-    <path d="M17 7a6 6 0 00-11.5 3H3m2.5 4A6 6 0 0017 17h1m-15-4h15"/>
-  </svg>`
-};
+              'home': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                      fill="#20c997" stroke="#0f5132" stroke-width="1.5">
+                <path d="M3 12l9-9 9 9v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>
+              </svg>`,
+            
+              'car': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                      fill="#9333ea" stroke="#6b21a8" stroke-width="1.5">
+                <path d="M3 13l2-5a2 2 0 0 1 1.9-1.3h10.2a2 2 0 0 1 1.9 1.3l2 5v6a1 1 0 0 1-1 1h-1a2 2 0 0 1-4 0H9a2 2 0 0 1-4 0H4a1 1 0 0 1-1-1v-6z"/>
+                <circle cx="7.5" cy="18.5" r="1.5" fill="#1f2937"/>
+                <circle cx="16.5" cy="18.5" r="1.5" fill="#1f2937"/>
+              </svg>`,
+            
+              'phone': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                      fill="#fd7e14" stroke="#7c2d12" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" 
+                      d="M2.25 6.75c0-1.243 1.007-2.25 2.25-2.25h2.25c.621 0 1.152.448 1.227 1.065l.348 2.784a1.125 1.125 0 01-.324.945l-1.26 1.26a16.5 16.5 0 007.29 7.29l1.26-1.26c.267-.267.66-.39 1.045-.324l2.784.348c.617.075 1.065.606 1.065 1.227V19.5c0 1.243-1.007 2.25-2.25 2.25h-1.5C8.268 21.75 2.25 15.732 2.25 8.25v-1.5z"/>
+              </svg>`,
+            
+              'card': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                      fill="#4A69E2" stroke="#1e3a8a" stroke-width="1.5">
+                <rect x="2" y="5" width="20" height="14" rx="2" ry="2"/>
+                <line x1="2" y1="10" x2="22" y2="10" stroke="#fff" stroke-width="1.5"/>
+              </svg>`,
+            
+              'euro': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                      fill="#ffc107" stroke="#b45309" stroke-width="1.5">
+                <path d="M17 7a6 6 0 00-11.5 3H3m2.5 4A6 6 0 0017 17h1m-15-4h15"/>
+              </svg>`
+            };
 
             const ICON_KEYS = Object.keys(PRESET_ICONS);
 
-            // (Alpha 17 / Alpha 71) Calcolo Versione
-            const buildNumber = 71; // (Alpha 71) Aggiornato build		(numero versione)
+            // Calcolo Versione        numero versione
+            const buildNumber = 100; 
             const patch = buildNumber % 100; 
             const minor = Math.floor(buildNumber / 100) % 10; 
             const major = Math.floor(buildNumber / 1000); 
             const versionString = `V${major}.${minor}.${patch}`;
-            // Fine Calcolo Versione
-
+            
             // Seleziona tutti gli elementi DOM necessari
             const screens = {
                 home: document.getElementById('home-screen'),
@@ -1601,9 +1675,10 @@ body.theme-dark svg [stroke] {
                 editExpense: document.getElementById('edit-expense-screen'), 
                 editCategory: document.getElementById('edit-category-screen'), 
                 monthlyHistory: document.getElementById('monthly-history-screen'),
-                weeklyDetail: document.getElementById('weekly-detail-screen'), // (Alpha 36)
-                weeklyCategoryDetail: document.getElementById('weekly-category-detail-screen'), // (Alpha 37)
-                chart: document.getElementById('chart-screen'), // (Alpha 36)
+                weeklyDetail: document.getElementById('weekly-detail-screen'),
+                weeklyCategoryDetail: document.getElementById('weekly-category-detail-screen'),
+                chart: document.getElementById('chart-screen'),
+                data: document.getElementById('data-screen'),
             };
 
             const elements = {
@@ -1613,9 +1688,8 @@ body.theme-dark svg [stroke] {
                 monthlyTotal: document.getElementById('monthly-total'),
                 weeklyDateRange: document.getElementById('weekly-date-range'), 
                 monthlyName: document.getElementById('monthly-name'), 
-                monthlyBudgetSummary: document.getElementById('monthly-budget-summary'), // (Alpha 28)
-                fixedExpensesSummary: document.getElementById('fixed-expenses-summary'), // (Alpha 55)
-                addExpenseBtn: document.getElementById('add-expense-btn'),
+                monthlyBudgetSummary: document.getElementById('monthly-budget-summary'), 
+                fixedExpensesSummary: document.getElementById('fixed-expenses-summary'), 
                 categorySelectionGrid: document.getElementById('category-selection-grid'),
                 addAmountTitle: document.getElementById('add-amount-title'),
                 expenseAmount: document.getElementById('expense-amount'),
@@ -1627,8 +1701,9 @@ body.theme-dark svg [stroke] {
                 newCategoryIsPresetCheckbox: document.getElementById('new-category-is-preset'),
                 newCategoryPresetValueGroup: document.getElementById('new-category-preset-value-group'),
                 newCategoryPresetValueInput: document.getElementById('new-category-preset-value'),
-                newCategoryIconSelectGroup: document.getElementById('new-category-icon-select-group'), // (Alpha 55)
-                newCategoryIconSelect: document.getElementById('new-category-icon-select'), // (Alpha 55)
+                newCategoryIconSelectGroup: document.getElementById('new-category-icon-select-group'), 
+                newCategoryIconSelect: document.getElementById('new-category-icon-select'), 
+                newCategoryRecurring: document.getElementById('new-category-recurring'), 
                 newCategoryBudgetFieldsDiv: document.getElementById('new-category-budget-fields'),
                 newCategoryBudgetType: document.getElementById('new-category-budget-type'), 
                 newCategoryBudgetValue: document.getElementById('new-category-budget-value'),
@@ -1639,50 +1714,52 @@ body.theme-dark svg [stroke] {
                 monthlyBox: document.getElementById('monthly-box'),
                 monthlyHistoryTitle: document.getElementById('monthly-history-title'),
                 monthlyHistoryGrid: document.getElementById('monthly-history-grid'),
-                manageCategoriesBtnHome: document.getElementById('manage-categories-btn-home'), 
                 categoryDetailTitle: document.getElementById('category-detail-title'),
                 expenseList: document.getElementById('expense-list'),
                 editExpenseTitle: document.getElementById('edit-expense-title'),
                 editExpenseAmount: document.getElementById('edit-expense-amount'),
                 editExpenseNote: document.getElementById('edit-expense-note'),
+                editExpenseCategorySelect: document.getElementById('edit-expense-category-select'), 
                 confirmEditBtn: document.getElementById('confirm-edit-btn'),
-                // (Alpha 54) Riferimento rimosso
-                // deleteExpenseBtn: document.getElementById('delete-expense-btn'), 
                 editCategoryTitle: document.getElementById('edit-category-title'),
                 editCategoryName: document.getElementById('edit-category-name'),
                 editCategoryIsPresetCheckbox: document.getElementById('edit-category-is-preset'),
                 editCategoryPresetValueGroup: document.getElementById('edit-category-preset-value-group'),
                 editCategoryPresetValueInput: document.getElementById('edit-category-preset-value'),
 				editCategoryRecurring: document.getElementById('edit-category-recurring'),
-                editCategoryIconSelectGroup: document.getElementById('edit-category-icon-select-group'), // (Alpha 55)
-                editCategoryIconSelect: document.getElementById('edit-category-icon-select'), // (Alpha 55)
+                editCategoryIconSelectGroup: document.getElementById('edit-category-icon-select-group'), 
+                editCategoryIconSelect: document.getElementById('edit-category-icon-select'), 
                 editCategoryBudgetFieldsDiv: document.getElementById('edit-category-budget-fields'),
                 editCategoryBudgetType: document.getElementById('edit-category-budget-type'), 
                 editCategoryBudgetValue: document.getElementById('edit-category-budget-value'),
-                confirmEditCategoryBtn: document.getElementById('confirm-edit-category-btn'),
-                appVersion: document.getElementById('app-version'), 
+                confirmEditCategoryBtn: document.getElementById('confirm-edit-category-btn'), 
                 importBtn: document.getElementById('import-btn'),
                 exportBtn: document.getElementById('export-btn'),
                 importFileInput: document.getElementById('import-file-input'),
                 toastMessage: document.getElementById('toast-message'), 
                 globalMonthlyBudgetInput: document.getElementById('global-monthly-budget'),
                 saveGlobalBudgetBtn: document.getElementById('save-global-budget-btn'),
-                // (Alpha 36) Nuovi elementi
-                viewChartBtn: document.getElementById('view-chart-btn'),
                 chartCategorySelect: document.getElementById('chart-category-select'),
-                expenseChartCanvas: document.getElementById('expense-chart'),
-                // ...
-                expenseChartCanvas: document.getElementById('expense-chart'),
-                // (Alpha 72) Aggiunti selettori storico
                 historyMonthSelect: document.getElementById('history-month-select'),
                 historyYearSelect: document.getElementById('history-year-select'),
-                // ...
+                monthlyCategorySummaryList: document.getElementById('monthly-category-summary-list'), 
                 weeklyDetailTitle: document.getElementById('weekly-detail-title'),
                 weeklyDetailList: document.getElementById('weekly-detail-list'),
-                // (Alpha 37) Nuovi elementi
                 weeklyCategoryDetailTitle: document.getElementById('weekly-category-detail-title'),
                 weeklyCategoryDetailList: document.getElementById('weekly-category-detail-list'),
-            };
+                manualExportShowBtn: document.getElementById('manual-export-show-btn'),
+                manualImportProcessBtn: document.getElementById('manual-import-process-btn'),
+                manualDataTextarea: document.getElementById('manual-data-textarea'),
+                
+                // (Alpha 94) Pulsanti Nuova Navigazione
+                navBtnHome: document.getElementById('nav-btn-home'),
+                navBtnChart: document.getElementById('nav-btn-chart'),
+                navBtnAdd: document.getElementById('nav-btn-add'),
+                navBtnData: document.getElementById('nav-btn-data'),
+                navBtnManage: document.getElementById('nav-btn-manage'),
+                appVersionFixed: document.getElementById('app-version-fixed'), // (Alpha 98)
+                themeToggleBtn: document.getElementById('theme-toggle-btn') // (Alpha 98)
+            }; 
 
             const backButtons = {
                 backToHomeFromAdd: document.getElementById('back-to-home-from-add-btn'),
@@ -1693,9 +1770,10 @@ body.theme-dark svg [stroke] {
                 cancelEditBtn: document.getElementById('cancel-edit-btn'), 
                 cancelEditCategory: document.getElementById('cancel-edit-category-btn'), 
                 backToHomeFromMonthly: document.getElementById('back-to-home-from-monthly-btn'),
-                backToHomeFromChart: document.getElementById('back-to-home-from-chart-btn'), // (Alpha 36)
-                backToHistoryFromWeeklyDetail: document.getElementById('back-to-history-from-weekly-detail-btn'), // (Alpha 36)
-                backToWeeklyDetailFromCat: document.getElementById('back-to-weekly-detail-from-cat-btn'), // (Alpha 37)
+                backToHomeFromChart: document.getElementById('back-to-home-from-chart-btn'),
+                backToHistoryFromWeeklyDetail: document.getElementById('back-to-history-from-weekly-detail-btn'),
+                backToWeeklyDetailFromCat: document.getElementById('back-to-weekly-detail-from-cat-btn'),
+                backToHomeFromData: document.getElementById('back-to-home-from-data-btn')
             };
             
             const modal = {
@@ -1717,18 +1795,15 @@ body.theme-dark svg [stroke] {
                 editingCategoryId: null, 
                 modalCallback: null, 
                 toastTimeout: null, 
-                selectedWeekForDetail: null, // (Alpha 36)
-                selectedCategoryForWeeklyDetail: null, // (Alpha 37)
-                expenseListReturnScreen: 'categoryDetail', // (Alpha 36)
-                tempSelectedIcon: null, // (Alpha 55)
-                // ...
-                tempSelectedIcon: null, // (Alpha 55)
-                // (Alpha 72) Aggiunti per storico
-                viewingMonth: null, // 0-11
+                selectedWeekForDetail: null, 
+                selectedCategoryForWeeklyDetail: null, 
+                expenseListReturnScreen: 'categoryDetail', 
+                tempSelectedIcon: null, 
+                viewingMonth: null, 
                 viewingYear: null,
             };
             
-            // --- GESTIONE DATI con localStorage ---
+            // --- GESTIONE DATI ---
             function loadData() {
                 try {
                     const savedExpenses = localStorage.getItem('expenses');
@@ -1741,7 +1816,6 @@ body.theme-dark svg [stroke] {
                     if (savedCategories) {
                         state.categories = JSON.parse(savedCategories);
                         
-                        // Migrazione Dati 
                         let needsSave = false;
                         state.categories.forEach(cat => {
                             if (cat.budget !== undefined) { 
@@ -1760,9 +1834,8 @@ body.theme-dark svg [stroke] {
                                 cat.presetValue = null;
                                 needsSave = true;
                             }
-                            // (Alpha 55) Migrazione Icone
                             if (cat.isSpecial && !cat.icon) {
-                                cat.icon = 'euro'; // Icona di default
+                                cat.icon = 'euro';
                                 needsSave = true;
                             }
                         });
@@ -1802,41 +1875,33 @@ body.theme-dark svg [stroke] {
                  } catch (e) { console.error("Errore salvataggio categorie: ", e); showModal('Errore Salvataggio', 'Impossibile salvare le categorie.', () => {}); }
             }
 
-             // (Alpha 28) Funzione per salvare il budget globale
             function saveGlobalBudget() {
                  try {
                      localStorage.setItem('globalMonthlyBudget', state.globalMonthlyBudget.toString());
                  } catch (e) { console.error("Errore salvataggio budget globale: ", e); showModal('Errore Salvataggio', 'Impossibile salvare il budget mensile.', () => {}); }
             }
-            // --- FINE GESTIONE DATI localStorage ---
+            // --- FINE GESTIONE DATI ---
 
-            // --- LOGICA MODALE (Invariata) ---
+            // --- LOGICA MODALE ---
            function showModal(title, text, onConfirm) {
-  modal.title.textContent = title;
-  modal.text.textContent = text;
-  state.modalCallback = onConfirm;
+              modal.title.textContent = title;
+              modal.text.textContent = text;
+              state.modalCallback = onConfirm;
+              modal.overlay.classList.remove('hidden');
+              requestAnimationFrame(() => {
+                modal.overlay.classList.add('visible');
+              });
+            }
 
-  // Rimuovi la classe hidden per rendere il modale visibile
-  modal.overlay.classList.remove('hidden');
-
-  // Usa il frame successivo per applicare la classe visible (transizione)
-  requestAnimationFrame(() => {
-    modal.overlay.classList.add('visible');
-  });
-}
-
-function hideModal() {
-  // Rimuovi la classe visible per avviare la transizione di chiusura
-  modal.overlay.classList.remove('visible');
-
-  // Dopo la transizione, ri-nascondi completamente l'overlay
-  setTimeout(() => {
-    if (!modal.overlay.classList.contains('visible')) {
-      modal.overlay.classList.add('hidden');
-      state.modalCallback = null;
-    }
-  }, 200); // stesso valore della transition CSS
-}
+            function hideModal() {
+              modal.overlay.classList.remove('visible');
+              setTimeout(() => {
+                if (!modal.overlay.classList.contains('visible')) {
+                  modal.overlay.classList.add('hidden');
+                  state.modalCallback = null;
+                }
+              }, 200); 
+            }
 
             modal.cancelBtn.addEventListener('click', hideModal);
             modal.confirmBtn.addEventListener('click', () => {
@@ -1851,13 +1916,12 @@ function hideModal() {
                  }
             });
 
-            // --- LOGICA TOAST (Invariata) ---
+            // --- LOGICA TOAST ---
             function showToast(message) {
                  if (state.toastTimeout) {
                     clearTimeout(state.toastTimeout);
                     elements.toastMessage.classList.remove('visible'); 
                  }
-                // Forza reflow per riavviare l'animazione se il toast era già visibile
                 void elements.toastMessage.offsetWidth; 
 
                 elements.toastMessage.textContent = message;
@@ -1866,10 +1930,10 @@ function hideModal() {
                 state.toastTimeout = setTimeout(() => {
                     elements.toastMessage.classList.remove('visible');
                     state.toastTimeout = null;
-                }, 3000); // Nasconde dopo 3 secondi
+                }, 3000);
             }
 
-            // --- UTILITY PER LE DATE (Invariate) ---
+            // --- UTILITY PER LE DATE ---
             function getWeekRange(date) {
                 const today = new Date(date.getTime()); 
                 const dayOfWeek = today.getDay(); 
@@ -1895,31 +1959,36 @@ function hideModal() {
                 return Math.floor(offset / 7) + 1;
             }
 
-            // --- (Alpha 38) HELPER PER FILTRO PREDEFINITE ---
-            /**
-             * Controlla se una spesa appartiene a una categoria predefinita.
-             * @param {object} expense - L'oggetto spesa.
-             * @returns {boolean} - True se la spesa è predefinita, altrimenti false.
-             */
             function isPresetExpense(expense) {
-                // (Alpha 39) Rinomina "isSpecial" in "isFixed" (Spesa Fissa)
-                // Controllo robusto per compatibilità
                 const category = state.categories.find(c => c.id === expense.categoryId);
                 return category && (category.isSpecial === true || category.isFixed === true);
             }
 
-
-            // --- NAVIGAZIONE TRA SCHERMATE (Invariata) ---
+// --- NAVIGAZIONE ---
             function navigate(screenName) {
+                // (Alpha 94) Aggiorna stato attivo Tab Bar
+                const buttons = [
+                    elements.navBtnHome, elements.navBtnChart, elements.navBtnAdd,
+                    elements.navBtnData, elements.navBtnManage
+                ];
+                buttons.forEach(btn => btn.classList.remove('active'));
+
+                // Associa la schermata al pulsante corretto
+                if (screenName === 'home') elements.navBtnHome.classList.add('active');
+                else if (screenName === 'chart') elements.navBtnChart.classList.add('active');
+                else if (screenName === 'addCategory' || screenName === 'addAmount') elements.navBtnAdd.classList.add('active');
+                else if (screenName === 'data') elements.navBtnData.classList.add('active');
+                else if (screenName === 'manageCategories' || screenName === 'editCategory') elements.navBtnManage.classList.add('active');
+                
+                // Codice esistente...
                 state.currentScreen = screenName;
                 Object.values(screens).forEach(screen => screen.classList.add('hidden'));
                 if (screens[screenName]) { 
                     screens[screenName].classList.remove('hidden');
                 } else {
                     console.error(`Schermata non trovata: ${screenName}`);
-                    screens.home.classList.remove('hidden'); // Fallback alla home
+                    screens.home.classList.remove('hidden'); // Fallback
                 }
-                 // Aggiorna UI
                  switch (screenName) {
                     case 'home': renderHomeScreen(); break; 
                     case 'addCategory': renderCategorySelectionScreen(); break; 
@@ -1929,27 +1998,65 @@ function hideModal() {
                     case 'editExpense': renderEditExpenseScreen(); break; 
                     case 'editCategory': renderEditCategoryScreen(); break; 
                     case 'monthlyHistory':
-                        // (Alpha 72) Imposta il mese/anno corrente all'ingresso
-                        const now = new Date();
-                        state.viewingMonth = now.getMonth(); // 0-11
-                        state.viewingYear = now.getFullYear();
                         renderMonthlyHistoryScreen(); 
                         break;
-                    case 'weeklyDetail': renderWeeklyDetailScreen(); break; // (Alpha 36)
-                    case 'weeklyCategoryDetail': renderWeeklyCategoryDetailScreen(); break; // (Alpha 37)
-                    case 'chart': renderChartScreen(); break; // (Alpha 36)
+                    case 'weeklyDetail': renderWeeklyDetailScreen(); break; 
+                    case 'weeklyCategoryDetail': renderWeeklyCategoryDetailScreen(); break; 
+                    case 'chart': renderChartScreen(); break; 
+                    case 'data': break;
+                }
+            }
+                function navigate(screenName) {
+                // (Alpha 94) Aggiorna stato attivo Tab Bar
+                const buttons = [
+                    elements.navBtnHome, elements.navBtnChart, elements.navBtnAdd,
+                    elements.navBtnData, elements.navBtnManage
+                ];
+                buttons.forEach(btn => btn.classList.remove('active'));
+
+                // Associa la schermata al pulsante corretto
+                if (screenName === 'home') elements.navBtnHome.classList.add('active');
+                else if (screenName === 'chart') elements.navBtnChart.classList.add('active');
+                else if (screenName === 'addCategory' || screenName === 'addAmount') elements.navBtnAdd.classList.add('active');
+                else if (screenName === 'data') elements.navBtnData.classList.add('active');
+                else if (screenName === 'manageCategories' || screenName === 'editCategory') elements.navBtnManage.classList.add('active');
+                
+                // Codice esistente...
+                state.currentScreen = screenName;
+                Object.values(screens).forEach(screen => screen.classList.add('hidden'));
+                state.currentScreen = screenName;
+                Object.values(screens).forEach(screen => screen.classList.add('hidden'));
+                if (screens[screenName]) { 
+                    screens[screenName].classList.remove('hidden');
+                } else {
+                    console.error(`Schermata non trovata: ${screenName}`);
+                    screens.home.classList.remove('hidden'); // Fallback
+                }
+                 switch (screenName) {
+                    case 'home': renderHomeScreen(); break; 
+                    case 'addCategory': renderCategorySelectionScreen(); break; 
+                    case 'manageCategories': renderManageCategoriesScreen(); break; 
+                    case 'viewExpenses': renderViewExpensesScreen(); break; 
+                    case 'categoryDetail': renderCategoryDetailScreen(); break; 
+                    case 'editExpense': renderEditExpenseScreen(); break; 
+                    case 'editCategory': renderEditCategoryScreen(); break; 
+                    case 'monthlyHistory':
+                        renderMonthlyHistoryScreen(); 
+                        break;
+                    case 'weeklyDetail': renderWeeklyDetailScreen(); break; 
+                    case 'weeklyCategoryDetail': renderWeeklyCategoryDetailScreen(); break; 
+                    case 'chart': renderChartScreen(); break; 
+                    case 'data': break;
                 }
             }
 
             // --- FUNZIONI DI VISUALIZZAZIONE ---
             
-            // (Alpha 38 / 55) MODIFICATA
             function renderHomeScreen() {
                  const now = new Date();
                  const weekOfMonth = getWeekOfMonth(now);
                  const lastDayOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0); 
                  const totalWeeksInMonth = getWeekOfMonth(lastDayOfMonth);
-                 // (Alpha 35) Modificato per andare a capo
                  const dateString = now.toLocaleDateString('it-IT', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
                  const weekString = `Settimana ${weekOfMonth} su ${totalWeeksInMonth}`;
                  elements.currentDate.innerHTML = `${dateString}<br>${weekString}`;
@@ -1963,18 +2070,16 @@ function hideModal() {
                  const currentMonth = now.getMonth();
                  const currentYear = now.getFullYear();
 
-                 // (Alpha 38) Filtra spese settimanali (SOLO VARIABILI)
                  const weeklyExpenses = state.expenses.filter(e => {
                      try { 
                          const d = new Date(e.date); 
                          return !isNaN(d) && 
                                 getWeekNumber(d) === currentWeek && 
                                 d.getFullYear() === currentYear &&
-                                !isPresetExpense(e); // <<<< FILTRO MANTENUTO
+                                !isPresetExpense(e); 
                     } catch(err){ return false; }
                  });
                  
-                 // (Alpha 38) Filtra spese mensili (TUTTE) - Invariato
                  const monthlyExpenses = state.expenses.filter(e => {
                      try { const d = new Date(e.date); return !isNaN(d) && d.getMonth() === currentMonth && d.getFullYear() === currentYear; } catch(err){ return false; }
                  });
@@ -1984,7 +2089,6 @@ function hideModal() {
                  elements.weeklyTotal.textContent = `€${weeklyTotal.toFixed(2)}`;
                  elements.monthlyTotal.textContent = `€${monthlyTotal.toFixed(2)}`;
 
-                 // (Alpha 28) Visualizza Budget Rimanente (basato sul totale mensile completo)
                  if (state.globalMonthlyBudget > 0) {
                      const remaining = state.globalMonthlyBudget - monthlyTotal;
                      elements.monthlyBudgetSummary.innerHTML = `
@@ -1998,8 +2102,7 @@ function hideModal() {
                      `; 
                  }
                  
-                 // (Alpha 55) Popola icone spese fisse
-                 elements.fixedExpensesSummary.innerHTML = ''; // Pulisci
+                 elements.fixedExpensesSummary.innerHTML = ''; 
                  const monthlyFixedExpenses = monthlyExpenses.filter(isPresetExpense);
                  const paidCategoryIds = new Set(monthlyFixedExpenses.map(e => e.categoryId));
                  
@@ -2008,14 +2111,13 @@ function hideModal() {
                     if (category && category.icon && PRESET_ICONS[category.icon]) {
                         const iconWrapper = document.createElement('div');
                         iconWrapper.className = 'summary-icon-item';
-                        iconWrapper.title = category.name; // Tooltip
+                        iconWrapper.title = category.name; 
                         iconWrapper.innerHTML = PRESET_ICONS[category.icon];
                         elements.fixedExpensesSummary.appendChild(iconWrapper);
                     }
                  });
              }
              
-             // Invariata
              function renderCategorySelectionScreen() { 
                  elements.categorySelectionGrid.innerHTML = ''; 
                  const sortedCategories = [...state.categories].sort((a, b) => a.name.localeCompare(b.name));
@@ -2029,7 +2131,6 @@ function hideModal() {
                         const clickedCategory = state.categories.find(c => c.id === cat.id); 
                         if (!clickedCategory) { console.error("Categoria non trovata:", cat.id); return; }
 
-                        // (Alpha 39) Rinomina 'isSpecial' in 'isFixed'
                         if (clickedCategory.isSpecial && clickedCategory.presetValue > 0) {
                              addPresetExpense(clickedCategory);
                         } else {
@@ -2043,7 +2144,6 @@ function hideModal() {
                  });
              }
              
-             // (Alpha 55) MODIFICATA
              function renderManageCategoriesScreen() {
                  elements.globalMonthlyBudgetInput.value = state.globalMonthlyBudget > 0 ? state.globalMonthlyBudget : '';
                  elements.manageCategoryList.innerHTML = '';
@@ -2071,7 +2171,6 @@ function hideModal() {
                         );
                      });
                      
-                     // (Alpha 55) Aggiungi icona se è spesa fissa
                      if (cat.isSpecial && cat.icon && PRESET_ICONS[cat.icon]) {
                          const iconEl = document.createElement('div');
                          iconEl.style.color = 'var(--primary-color)';
@@ -2088,12 +2187,10 @@ function hideModal() {
                      elements.manageCategoryList.appendChild(item);
                  });
                  
-                 // Renderizza la griglia icone per AGGIUNGI
-                 renderIconSelection('new-category-icon-select', 'euro'); // 'euro' è il default
-                 state.tempSelectedIcon = 'euro'; // Imposta default
+                 renderIconSelection('new-category-icon-select', 'euro'); 
+                 state.tempSelectedIcon = 'euro'; 
              }
              
-             // (Alpha 55) MODIFICATA
              function renderEditCategoryScreen() { 
                  const category = state.categories.find(c => c.id === state.editingCategoryId);
                  if (!category) { navigate('manageCategories'); return; }
@@ -2101,11 +2198,11 @@ function hideModal() {
                  elements.editCategoryName.value = category.name;
                  elements.editCategoryIsPresetCheckbox.checked = category.isSpecial || false; 
                  
-                 const selectedIcon = category.icon || 'euro'; // Default a 'euro'
-                 state.tempSelectedIcon = selectedIcon; // Imposta icona attuale
+                 const selectedIcon = category.icon || 'euro'; 
+                 state.tempSelectedIcon = selectedIcon; 
                  renderIconSelection('edit-category-icon-select', selectedIcon);
                  
-                 handlePresetToggleEdit(); // Chiama dopo aver impostato l'icona
+                 handlePresetToggleEdit(); 
                  
                  if (category.isSpecial) { 
                     elements.editCategoryPresetValueInput.value = category.presetValue || '';
@@ -2118,7 +2215,6 @@ function hideModal() {
                  elements.editCategoryIsPresetCheckbox.addEventListener('change', handlePresetToggleEdit);
              }
              
-             // (Alpha 55) NUOVA FUNZIONE
              function renderIconSelection(containerId, selectedIconName) {
                 const container = document.getElementById(containerId);
                 if (!container) return;
@@ -2135,9 +2231,7 @@ function hideModal() {
                     }
                     
                     item.addEventListener('click', () => {
-                        // Aggiorna stato temporaneo
                         state.tempSelectedIcon = iconName;
-                        // Aggiorna UI
                         container.querySelectorAll('.icon-select-item').forEach(el => el.classList.remove('selected'));
                         item.classList.add('selected');
                     });
@@ -2146,21 +2240,19 @@ function hideModal() {
                 });
              }
              
-             // (Alpha 38) Mantenuta SOLO VARIABILI
              function renderViewExpensesScreen() { 
                  const now = new Date();
                  const currentWeek = getWeekNumber(now);
                  const currentYear = now.getFullYear();
                  const currentMonth = now.getMonth();
 
-                 // (Alpha 38) Filtra spese settimanali (SOLO VARIABILI)
                  const weeklyExpenses = state.expenses.filter(e => {
                      try { 
                          const expenseDate = new Date(e.date); 
                          return !isNaN(expenseDate) && 
                                 getWeekNumber(expenseDate) === currentWeek && 
                                 expenseDate.getFullYear() === currentYear &&
-                                !isPresetExpense(e); // <<<< FILTRO MANTENUTO
+                                !isPresetExpense(e); 
                     } catch(err) { return false; }
                  });
                  
@@ -2174,7 +2266,6 @@ function hideModal() {
                  
                  elements.viewExpensesGrid.innerHTML = ''; 
                  state.categories.forEach(cat => {
-                    // (Alpha 38) Ignora categorie fisse in questa vista
                     if (cat.isSpecial) return; 
 
                     const weeklyCategoryExpenses = weeklyExpenses.filter(e => e.categoryId === cat.id);
@@ -2182,7 +2273,6 @@ function hideModal() {
                     
                     const weeklyTotal = weeklyCategoryExpenses.reduce((sum, e) => sum + (e.amount || 0), 0);
                     
-                    // (Alpha 38) Calcolo Mese (SOLO VARIABILI) per coerenza
                     const monthlyCategoryExpenses = state.expenses.filter(e => {
                          try { 
                              const expenseDate = new Date(e.date); 
@@ -2190,7 +2280,7 @@ function hideModal() {
                                     e.categoryId === cat.id && 
                                     expenseDate.getMonth() === currentMonth && 
                                     expenseDate.getFullYear() === currentYear &&
-                                    !isPresetExpense(e); // <<<< FILTRO MANTENUTO
+                                    !isPresetExpense(e); 
                         } catch(err) { return false; }
                     });
                     const monthlyTotal = monthlyCategoryExpenses.reduce((sum, e) => sum + (e.amount || 0), 0);
@@ -2227,24 +2317,21 @@ function hideModal() {
                  });
              }
              
-             // (Alpha 72) MODIFICATA per usare viewingMonth/Year e selettori
             function renderMonthlyHistoryScreen() {
                 const now = new Date();
-                const currentMonth = state.viewingMonth; // 0-11
+                const currentMonth = state.viewingMonth; 
                 const currentYear = state.viewingYear;
 
-                // --- 1. Popola i selettori ---
                 const monthNames = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"];
                 elements.historyMonthSelect.innerHTML = '';
                 monthNames.forEach((name, index) => {
                     const option = document.createElement('option');
-                    option.value = index; // 0-11
+                    option.value = index; 
                     option.textContent = name;
                     if (index === currentMonth) option.selected = true;
                     elements.historyMonthSelect.appendChild(option);
                 });
 
-                // Popola Anni (dal 2023 all'anno corrente + 1, o dall'anno della spesa più vecchia)
                 let minYear = 2023;
                 if (state.expenses.length > 0) {
                     const oldestExpense = state.expenses.reduce((oldest, e) => {
@@ -2264,17 +2351,15 @@ function hideModal() {
                     elements.historyYearSelect.appendChild(option);
                 }
 
-                // --- 2. Aggancia i listener (usando .onchange per evitare duplicati) ---
                 elements.historyMonthSelect.onchange = () => {
                     state.viewingMonth = parseInt(elements.historyMonthSelect.value);
-                    renderMonthlyHistoryScreen(); // Ridisegna
+                    renderMonthlyHistoryScreen(); 
                 };
                 elements.historyYearSelect.onchange = () => {
                     state.viewingYear = parseInt(elements.historyYearSelect.value);
-                    renderMonthlyHistoryScreen(); // Ridisegna
+                    renderMonthlyHistoryScreen(); 
                 };
 
-                // --- 3. Filtra e disegna i dati ---
                 const selectedDate = new Date(currentYear, currentMonth, 1);
                 elements.monthlyHistoryTitle.textContent = `Riepilogo: ${selectedDate.toLocaleDateString('it-IT', { month: 'long', year: 'numeric' })}`;
                  
@@ -2290,7 +2375,7 @@ function hideModal() {
                 elements.monthlyHistoryGrid.innerHTML = '';
                 if (monthlyExpenses.length === 0) {
                     elements.monthlyHistoryGrid.innerHTML = '<p style="text-align:center; color: var(--secondary-text-color);">Nessuna spesa registrata per questo mese.</p>';
-                    return;
+                    // Non fare return, dobbiamo mostrare il riepilogo categorie vuoto
                 }
                  
                 const expensesByWeek = {}; 
@@ -2308,14 +2393,48 @@ function hideModal() {
                     
                     item.addEventListener('click', () => {
                         state.selectedWeekForDetail = parseInt(weekNum);
-                        // NOTA: viewingMonth e viewingYear sono già nello state
                         navigate('weeklyDetail');
                     });
 
                     elements.monthlyHistoryGrid.appendChild(item);
                 });
-            }            
-             // (Alpha 53) MODIFICATA - Aggiunge X
+                
+                elements.monthlyCategorySummaryList.innerHTML = ''; 
+                
+                const expensesByCategory = {};
+                monthlyExpenses.forEach(e => {
+                    if (!expensesByCategory[e.categoryId]) {
+                        expensesByCategory[e.categoryId] = 0;
+                    }
+                    expensesByCategory[e.categoryId] += (e.amount || 0);
+                });
+                
+                const sortedCategoryIds = Object.keys(expensesByCategory).sort((a, b) => expensesByCategory[b] - expensesByCategory[a]);
+
+                if (sortedCategoryIds.length === 0 && monthlyExpenses.length > 0) {
+                     elements.monthlyCategorySummaryList.innerHTML = '<p style="text-align:center; color: var(--secondary-text-color);">Errore nel raggruppamento categorie.</p>';
+                     return;
+                }
+
+                sortedCategoryIds.forEach(catId => {
+                    const category = state.categories.find(c => c.id == catId);
+                    if (!category) return; 
+                    
+                    const categoryName = category.name;
+                    const total = expensesByCategory[catId];
+                    
+                    const item = document.createElement('div');
+                    item.className = 'category-summary-item'; 
+                    item.style.cursor = 'default'; 
+                    
+                    item.innerHTML = `
+                        <div class="details">${categoryName}</div>
+                        <div class="amount">€${total.toFixed(2)}</div>
+                    `;
+                    elements.monthlyCategorySummaryList.appendChild(item);
+                });
+            }
+             
              function renderCategoryDetailScreen() { 
                  const categoryId = state.selectedCategoryForDetail;
                  if (!categoryId) { navigate('viewExpenses'); return; }
@@ -2327,7 +2446,6 @@ function hideModal() {
                  const currentMonth = now.getMonth();
                  const currentYear = now.getFullYear();
                  
-                 // (Alpha 38) Filtra spese (SOLO VARIABILI)
                  const categoryMonthlyExpenses = state.expenses.filter(e => {
                     try { 
                         const expenseDate = new Date(e.date); 
@@ -2335,7 +2453,7 @@ function hideModal() {
                                e.categoryId === categoryId && 
                                expenseDate.getMonth() === currentMonth && 
                                expenseDate.getFullYear() === currentYear &&
-                               !isPresetExpense(e); // <<<< FILTRO MANTENUTO
+                               !isPresetExpense(e); 
                     } catch(err) { return false; }
                  });
 
@@ -2351,34 +2469,30 @@ function hideModal() {
                     const formattedDate = expenseDate.toLocaleDateString('it-IT', { day: '2-digit', month: 'short' });
                     const formattedTime = expenseDate.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
                     
-                    // (Alpha 53) Aggiunta icona X
                     const deleteIcon = document.createElement('div');
                     deleteIcon.className = 'delete-icon';
                     deleteIcon.innerHTML = '&times;';
-                    const expenseId = e.id; // Salva ID
+                    const expenseId = e.id; 
                     deleteIcon.addEventListener('click', (evt) => {
-                        evt.stopPropagation(); // Evita di triggerare il click sull'item
+                        evt.stopPropagation(); 
                         handleDeleteExpense(expenseId, 'categoryDetail');
                     });
 
                     item.innerHTML = `<div class="details"> ${formattedDate} - ${formattedTime} ${e.note ? `<div class="note">${e.note}</div>` : ''} </div> <div class="amount">€${(e.amount || 0).toFixed(2)}</div>`;
                     
-                    // (Alpha 53) Rendi cliccabile l'item per MODIFICARE
                     item.addEventListener('click', () => {
                         state.expenseListReturnScreen = 'categoryDetail'; 
                         state.editingExpenseId = e.id; 
                         navigate('editExpense'); 
                     });
                     
-                    item.appendChild(deleteIcon); // (Alpha 53) Aggiungi l'icona
+                    item.appendChild(deleteIcon); 
                     elements.expenseList.appendChild(item);
                  });
              }
              
-           // (Alpha 72) MODIFICATA per usare viewingMonth/Year
             function renderWeeklyDetailScreen() {
                 const weekNum = state.selectedWeekForDetail;
-                // (Alpha 72) Usa il mese/anno in visualizzazione
                 const currentMonth = state.viewingMonth; 
                 const currentYear = state.viewingYear;
 
@@ -2429,17 +2543,15 @@ function hideModal() {
                         
                     item.addEventListener('click', () => {
                         state.selectedCategoryForWeeklyDetail = catId; 
-                        // NOTA: weekNum, viewingMonth, viewingYear sono già nello state
                         navigate('weeklyCategoryDetail'); 
                     });
                     elements.weeklyDetailList.appendChild(item);
                  });
             } 
-            // (Alpha 72) MODIFICATA per usare viewingMonth/Year
+
              function renderWeeklyCategoryDetailScreen() {
                  const weekNum = state.selectedWeekForDetail;
                  const categoryId = state.selectedCategoryForWeeklyDetail;
-                 // (Alpha 72) Usa il mese/anno in visualizzazione
                  const currentMonth = state.viewingMonth;
                  const currentYear = state.viewingYear;
                  
@@ -2504,7 +2616,7 @@ function hideModal() {
                     elements.weeklyCategoryDetailList.appendChild(item);
                  });
              }
-             // (Alpha 53) MODIFICATA: Rimosso collegamento .onclick a deleteExpenseBtn
+             
              function renderEditExpenseScreen() { 
                  const expense = state.expenses.find(e => e.id === state.editingExpenseId);
                  if (!expense) { 
@@ -2516,24 +2628,31 @@ function hideModal() {
                  elements.editExpenseAmount.value = expense.amount || 0;
                  elements.editExpenseNote.value = expense.note || '';
                  
-                 // (Alpha 52) FIX: Aggiungi listener .onclick qui
-                 // Questo sovrascrive qualsiasi listener precedente e garantisce il funzionamento
+                 const select = elements.editExpenseCategorySelect;
+                 select.innerHTML = ''; 
+                 
+                 const variableCategories = state.categories.filter(cat => !cat.isSpecial);
+                 
+                 variableCategories.forEach(cat => {
+                    const option = document.createElement('option');
+                    option.value = cat.id;
+                    option.textContent = cat.name;
+                    select.appendChild(option);
+                 });
+                 
+                 select.value = expense.categoryId;
+                 
                  elements.confirmEditBtn.onclick = saveExpenseEdit;
-                 // (Alpha 53) Rimosso: il pulsante non esiste più
-                 // elements.deleteExpenseBtn.onclick = deleteExpense; 
                  backButtons.cancelEditBtn.onclick = () => {
-                    state.editingExpenseId = null; // Resetta l'ID
+                    state.editingExpenseId = null; 
                     navigate(state.expenseListReturnScreen || 'home'); 
                  };
              }
 
-            // (Alpha 38) Mantenuta SOLO VARIABILI
-           // (Alpha 68) Sostituita per unificare i listener
             function renderChartScreen() {
                 elements.chartCategorySelect.innerHTML = '<option value="all">Tutte le categorie</option>';
-                 // (Alpha 38) Filtra via le categorie fisse dal select
                 const sortedCategories = [...state.categories]
-                    .filter(cat => !cat.isSpecial) // (Alpha 39) Usa 'isSpecial'
+                    .filter(cat => !cat.isSpecial) 
                     .sort((a, b) => a.name.localeCompare(b.name));
                     
                 sortedCategories.forEach(cat => {
@@ -2543,28 +2662,19 @@ function hideModal() {
                     elements.chartCategorySelect.appendChild(option);
                 });
                 
-                // Assicurati che i listener siano agganciati
-                // Usiamo .onchange per sovrascrivere eventuali listener vecchi
                 document.getElementById('chart-period').onchange = updateCharts;
                 elements.chartCategorySelect.onchange = updateCharts;
-
-                // Disegna i grafici
+                
                 updateCharts();
             }
+
 			// --- (Alpha 68) NUOVA SEZIONE GRAFICI ---
-// --- (Alpha 69) Helper per leggere i colori del Tema ---
             function getCssColor(variableName) {
-                // variableName deve essere tipo '--primary-color'
                 return getComputedStyle(document.body).getPropertyValue(variableName).trim();
             }
-            // Variabili globali per i grafici (al posto di state.pieInstance)
-            let mainChartInstance = null;
+            
             let pieChartInstance = null;
 
-            /**
-             * Funzione helper per filtrare le spese in base ai selettori
-             * @returns {Array} Spese filtrate (solo VARIABILI)
-             */
             function getFilteredExpenses() {
                 const period = document.getElementById('chart-period').value;
                 const categoryId = elements.chartCategorySelect.value;
@@ -2589,103 +2699,22 @@ function hideModal() {
                     endDate.setHours(23, 59, 59, 999);
                 }
 
-                // Filtra solo spese VARIABILI (non fisse/preset)
                 return state.expenses.filter(e => {
                     const cat = state.categories.find(c => c.id === e.categoryId);
                     if (!cat || cat.isSpecial) return false;
-
                     const d = new Date(e.date);
                     if (isNaN(d)) return false;
-
                     const inDateRange = d >= startDate && d <= endDate;
                     const inCategory = (categoryId === 'all' || e.categoryId == categoryId);
-                    
                     return inDateRange && inCategory;
                 });
             }
 
-            /**
-             * Master function chiamata dai listener per aggiornare entrambi i grafici
-             */
             function updateCharts() {
                 const filteredExpenses = getFilteredExpenses();
-                const period = document.getElementById('chart-period').value;
-                
-                drawMainChart(filteredExpenses, period);
                 drawPieChart(filteredExpenses);
             }
 
-            /**
-             * Disegna il grafico principale (Barra)
-             * Questo ora mostra dati utili in base al periodo
-             */
-            function drawMainChart(expenses, period) {
-                if (mainChartInstance) {
-                    mainChartInstance.destroy();
-                }
-
-                let labels = [];
-                let data = [];
-                const now = new Date();
-
-                if (period === 'week') {
-                    // Raggruppa per giorno (Lun, Mar, ...)
-                    labels = ['Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab', 'Dom'];
-                    data = Array(7).fill(0);
-                    expenses.forEach(e => {
-                        const day = new Date(e.date).getDay(); // Dom=0, Lun=1
-                        const index = (day === 0) ? 6 : day - 1;
-                        data[index] += e.amount;
-                    });
-                } else if (period === 'month') {
-                    // Raggruppa per giorno del mese
-                    const daysInMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
-                    labels = Array.from({ length: daysInMonth }, (_, i) => i + 1);
-                    data = Array(daysInMonth).fill(0);
-                    expenses.forEach(e => {
-                        const dayIndex = new Date(e.date).getDate() - 1;
-                        data[dayIndex] += e.amount;
-                    });
-                } else { // 'year'
-                    // Raggruppa per mese (Gen, Feb, ...)
-                    labels = ['Gen', 'Feb', 'Mar', 'Apr', 'Mag', 'Giu', 'Lug', 'Ago', 'Set', 'Ott', 'Nov', 'Dic'];
-                    data = Array(12).fill(0);
-                    expenses.forEach(e => {
-                        const monthIndex = new Date(e.date).getMonth();
-                        data[monthIndex] += e.amount;
-                    });
-                }
-
-                const ctx = elements.expenseChartCanvas.getContext('2d');
-                mainChartInstance = new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        labels: labels,
-                        datasets: [{
-                            label: 'Spese Variabili',
-                            data: data,
-                            // (Alpha 69) Usa la funzione helper per "tradurre" i colori
-                            backgroundColor: getCssColor('--primary-color'),
-                            borderColor: getCssColor('--primary-dark'),
-                            borderWidth: 1,
-                            borderRadius: 4
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        scales: { y: { beginAtZero: true } },
-                        plugins: {
-                            legend: { display: false },
-                            datalabels: { display: false } // Nasconde le etichette per pulizia
-                        }
-                    }
-                });
-            }
-
-            /**
-             * Disegna il Grafico a Torta (ora corretto)
-             */
             function drawPieChart(expenses) {
                 if (pieChartInstance) {
                     pieChartInstance.destroy();
@@ -2701,14 +2730,12 @@ function hideModal() {
                 const labels = Object.keys(totalsByCategory);
                 const data = Object.values(totalsByCategory);
 
-                // Nascondi il grafico se non ci sono dati
                 const pieCanvas = document.getElementById('pie-chart');
                 if (data.length === 0 || data.every(d => d === 0)) {
                     pieCanvas.style.display = 'none';
                     return;
                 }
                 pieCanvas.style.display = 'block';
-
 
                 const ctx = pieCanvas.getContext('2d');
                 pieChartInstance = new Chart(ctx, {
@@ -2717,7 +2744,6 @@ function hideModal() {
                         labels,
                         datasets: [{
                             data,
-                            // (Alpha 69) Usa la funzione helper per "tradurre" i colori
                             backgroundColor: [
                                 getCssColor('--primary-color'), getCssColor('--green'), getCssColor('--yellow'),
                                 getCssColor('--orange'), getCssColor('--red'), getCssColor('--secondary-text-color')
@@ -2735,20 +2761,20 @@ function hideModal() {
                                 formatter: (value, context) => {
                                     const total = context.chart.data.datasets[0].data.reduce((a, b) => a + b, 0);
                                     const percentage = (value / total) * 100;
-                                    return percentage > 5 ? percentage.toFixed(0) + '%' : ''; // Mostra solo se > 5%
+                                    return percentage > 5 ? percentage.toFixed(0) + '%' : ''; 
                                 }
                             }
                         }
                     }
                 });
             }
+            // --- FINE SEZIONE GRAFICI ---
 
-            // --- FINE (Alpha 68) NUOVA SEZIONE GRAFICI ---
-// (Alpha 70) FIX: Funzione addExpense ripristinata
+            // --- AZIONI UTENTE ---
             function addExpense() {
                 const amount = parseFloat(elements.expenseAmount.value);
                 const note = elements.expenseNote.value.trim();
-                const isRecurring = elements.expenseRecurring.checked; // (Alpha 70) Aggiunto recurring
+                const isRecurring = elements.expenseRecurring.checked; 
                 
                 if (!isFinite(amount) || amount <= 0) {
                     showModal('Errore', 'Inserisci un importo valido.', () => {});
@@ -2760,7 +2786,6 @@ function hideModal() {
                     return;
                 }
                 
-                // Disabilita per evitare doppio click
                 elements.confirmExpenseBtn.disabled = true;
 
                 state.expenses.push({
@@ -2768,43 +2793,43 @@ function hideModal() {
                     categoryId: state.selectedCategory,
                     amount: amount,
                     note: note,
-                    recurring: isRecurring, // (Alpha 70) Aggiunto recurring
+                    recurring: isRecurring, 
                     date: new Date().toISOString()
                 });
                 saveExpenses();
 
-                // Pulisci i campi
                 elements.expenseAmount.value = '';
                 elements.expenseNote.value = '';
-                elements.expenseRecurring.checked = false; // (Alpha 70) Aggiunto recurring
+                elements.expenseRecurring.checked = false; 
                 state.selectedCategory = null;
 
-                // Ri-abilita e naviga
                 setTimeout(() => {
                     elements.confirmExpenseBtn.disabled = false;
                     navigate('home');
-                }, 300); // Piccolo ritardo per feedback
+                }, 300);
             }             
-            // (Alpha 55) MODIFICATA
+            
             function addCategory() { 
                 const name = elements.newCategoryName.value.trim();
-                const isSpecial = elements.newCategoryIsPresetCheckbox.checked; // (Alpha 39) 'isSpecial'
+                const isSpecial = elements.newCategoryIsPresetCheckbox.checked; 
                 const presetValue = parseFloat(elements.newCategoryPresetValueInput.value);
+                const recurring = elements.newCategoryRecurring.checked; 
                 const budgetType = elements.newCategoryBudgetType.value;
                 const budgetValue = parseFloat(elements.newCategoryBudgetValue.value);
-                const icon = state.tempSelectedIcon; // (Alpha 55)
+                const icon = state.tempSelectedIcon; 
                 
                 if (!name) { showModal('Errore', 'Inserisci un nome.', () => {}); return; }
                 if (state.categories.length >= 50) { showModal('Limite Raggiunto', 'Massimo 50 categorie.', () => {}); return; }
                 
-                const newCategory = { id: Date.now(), name: name, isSpecial: isSpecial, presetValue: null, budgetType: 'none', budgetValue: null, icon: null }; // (Alpha 39) 'isSpecial'
+                const newCategory = { id: Date.now(), name: name, isSpecial: isSpecial, presetValue: null, budgetType: 'none', budgetValue: null, icon: null, recurring: false }; 
                 
-                if (isSpecial) { // (Alpha 39) 'isSpecial'
+                if (isSpecial) { 
                     if (!isNaN(presetValue) && presetValue > 0) { 
                         newCategory.presetValue = presetValue; 
-                        newCategory.icon = icon || 'euro'; // (Alpha 55)
+                        newCategory.icon = icon || 'euro'; 
+                        newCategory.recurring = recurring; 
                     } 
-                    else { showModal('Errore', 'Importo fisso non valido.', () => {}); return; } // (Alpha 39) Testo modificato
+                    else { showModal('Errore', 'Importo fisso non valido.', () => {}); return; } 
                 } else {
                      if (budgetType !== 'none' && !isNaN(budgetValue) && budgetValue > 0) { 
                         newCategory.budgetType = budgetType; 
@@ -2817,24 +2842,24 @@ function hideModal() {
                 
                 elements.newCategoryName.value = ''; 
                 elements.newCategoryIsPresetCheckbox.checked = false; 
+                elements.newCategoryRecurring.checked = false; 
                 handlePresetToggleAdd(); 
                 elements.newCategoryPresetValueInput.value = ''; 
                 elements.newCategoryBudgetType.value = 'none'; 
                 elements.newCategoryBudgetValue.value = '';
-                state.tempSelectedIcon = 'euro'; // Resetta default
+                state.tempSelectedIcon = 'euro'; 
                 renderIconSelection('new-category-icon-select', 'euro');
                 
                 renderManageCategoriesScreen(); 
             }
             
-            // (Alpha 55) MODIFICATA
             function saveCategoryEdit() { 
                 const newName = elements.editCategoryName.value.trim();
-                const isSpecial = elements.editCategoryIsPresetCheckbox.checked; // (Alpha 39) 'isSpecial'
+                const isSpecial = elements.editCategoryIsPresetCheckbox.checked; 
                 const presetValue = parseFloat(elements.editCategoryPresetValueInput.value);
                 const newBudgetType = elements.editCategoryBudgetType.value;
                 const newBudgetValue = parseFloat(elements.editCategoryBudgetValue.value);
-                const icon = state.tempSelectedIcon; // (Alpha 55)
+                const icon = state.tempSelectedIcon; 
                 
                 if (!newName) { showModal('Errore', 'Nome non valido.', () => {}); return; }
                 if (!state.editingCategoryId) { showModal('Errore', 'ID non valido.', () => {}); return; }
@@ -2843,20 +2868,20 @@ function hideModal() {
                 if (categoryIndex === -1) { navigate('manageCategories'); return; }
                 
                 state.categories[categoryIndex].name = newName; 
-                state.categories[categoryIndex].isSpecial = isSpecial; // (Alpha 39) 'isSpecial'
+                state.categories[categoryIndex].isSpecial = isSpecial; 
                 
-                if (isSpecial) { // (Alpha 39) 'isSpecial'
+                if (isSpecial) { 
                      if (!isNaN(presetValue) && presetValue > 0) { 
                         state.categories[categoryIndex].presetValue = presetValue;
 						state.categories[categoryIndex].recurring = elements.editCategoryRecurring.checked;
 						state.categories[categoryIndex].budgetType = 'none'; 
                         state.categories[categoryIndex].budgetValue = null;
-                        state.categories[categoryIndex].icon = icon || 'euro'; // (Alpha 55)
+                        state.categories[categoryIndex].icon = icon || 'euro'; 
                     } 
-                     else { showModal('Errore', 'Importo fisso non valido.', () => {}); return; } // (Alpha 39) Testo modificato
+                     else { showModal('Errore', 'Importo fisso non valido.', () => {}); return; } 
                 } else {
                     state.categories[categoryIndex].presetValue = null;
-                    state.categories[categoryIndex].icon = null; // (Alpha 55)
+                    state.categories[categoryIndex].icon = null; 
                     if (newBudgetType !== 'none' && !isNaN(newBudgetValue) && newBudgetValue > 0) { 
                         state.categories[categoryIndex].budgetType = newBudgetType; 
                         state.categories[categoryIndex].budgetValue = newBudgetValue; 
@@ -2868,19 +2893,21 @@ function hideModal() {
                 }
                 saveCategories(); 
                 state.editingCategoryId = null; 
-                state.tempSelectedIcon = 'euro'; // Resetta
+                state.tempSelectedIcon = 'euro'; 
                 navigate('manageCategories');
             }
             
             function saveExpenseEdit() { 
                 const newAmount = parseFloat(elements.editExpenseAmount.value);
                 const newNote = elements.editExpenseNote.value.trim();
+                const newCategoryId = parseInt(elements.editExpenseCategorySelect.value); 
                 if (!newAmount || newAmount <= 0 || isNaN(newAmount)) { showModal('Errore', 'Importo non valido.', () => {}); return; }
                 if (!state.editingExpenseId) { showModal('Errore', 'ID Spesa non valido.', () => {}); return; }
                 const expenseIndex = state.expenses.findIndex(e => e.id === state.editingExpenseId);
                 if (expenseIndex === -1) { navigate(state.expenseListReturnScreen || 'home'); return; } 
                 state.expenses[expenseIndex].amount = newAmount; 
                 state.expenses[expenseIndex].note = newNote;
+                state.expenses[expenseIndex].categoryId = newCategoryId; 
                 saveExpenses(); 
                 state.editingExpenseId = null; 
                 navigate(state.expenseListReturnScreen || 'home'); 
@@ -2892,44 +2919,33 @@ function hideModal() {
                 renderManageCategoriesScreen(); 
             }
             
-            // (Alpha 53) Nuova funzione helper
-            /**
-             * Avvia il processo di eliminazione di una spesa specifica e aggiorna la UI.
-             * @param {number} expenseId - L'ID della spesa da eliminare.
-             * @param {string} returnScreen - La schermata a cui tornare dopo l'eliminazione.
-             */
             function handleDeleteExpense(expenseId, returnScreen) {
-  const expense = state.expenses.find(e => e.id === expenseId);
-  if (!expense) return;
+              const expense = state.expenses.find(e => e.id === expenseId);
+              if (!expense) return;
+            
+              showModal('Elimina Spesa', `Vuoi eliminare la spesa da €${expense.amount.toFixed(2)}?`, () => {
+                state.expenses = state.expenses.filter(e => e.id !== expenseId);
+                saveExpenses();
+            
+                elements.toastMessage.innerHTML = `Spesa eliminata 
+                  <button id="undo-btn" style="margin-left:10px; color:yellow; background:none; border:none; cursor:pointer;">
+                    Annulla
+                  </button>`;
+                elements.toastMessage.classList.add('visible');
+            
+                const undoBtn = document.getElementById('undo-btn');
+                undoBtn.addEventListener('click', () => {
+                  state.expenses.push(expense);
+                  saveExpenses();
+                  showToast('Eliminazione annullata');
+                });
+            
+                setTimeout(() => elements.toastMessage.classList.remove('visible'), 4000);
+                navigate(returnScreen || 'home');
+              });
+            }
 
-  showModal('Elimina Spesa', `Vuoi eliminare la spesa da €${expense.amount.toFixed(2)}?`, () => {
-    state.expenses = state.expenses.filter(e => e.id !== expenseId);
-    saveExpenses();
-
-    elements.toastMessage.innerHTML = `Spesa eliminata 
-      <button id="undo-btn" style="margin-left:10px; color:yellow; background:none; border:none; cursor:pointer;">
-        Annulla
-      </button>`;
-    elements.toastMessage.classList.add('visible');
-
-    const undoBtn = document.getElementById('undo-btn');
-    undoBtn.addEventListener('click', () => {
-      state.expenses.push(expense);
-      saveExpenses();
-      showToast('Eliminazione annullata');
-    });
-
-    setTimeout(() => elements.toastMessage.classList.remove('visible'), 4000);
-    navigate(returnScreen || 'home');
-  });
-}
-
-
-            // (Alpha 53) Funzione deleteExpense ora è un helper
             function deleteExpense() { 
-                // Questa funzione ora viene chiamata solo dall'icona X tramite handleDeleteExpense
-                // o dal vecchio pulsante (se esistesse).
-                // La lasciamo per sicurezza, ma la logica principale è in handleDeleteExpense.
                 if (!state.editingExpenseId) { 
                     console.warn("deleteExpense chiamato senza editingExpenseId");
                     return; 
@@ -2948,30 +2964,23 @@ function hideModal() {
                  navigate('home'); 
             }
             
-            // (Alpha 55) MODIFICATA
-            function handlePresetToggleAdd() { 
-                if (elements.newCategoryIsPresetCheckbox.checked) { 
-                    elements.newCategoryPresetValueGroup.classList.remove('hidden'); 
-                    elements.newCategoryIconSelectGroup.classList.remove('hidden'); // Mostra icone
-                    elements.newCategoryBudgetFieldsDiv.classList.add('hidden'); 
-                } 
-                else { 
-                    elements.newCategoryPresetValueGroup.classList.add('hidden'); 
-                    elements.newCategoryIconSelectGroup.classList.add('hidden'); // Nascondi icone
-                    elements.newCategoryBudgetFieldsDiv.classList.remove('hidden'); 
-                }
+           function handlePresetToggleAdd() { 
+                const isChecked = elements.newCategoryIsPresetCheckbox.checked; 
+                elements.newCategoryPresetValueGroup.classList.toggle('hidden', !isChecked); 
+                elements.newCategoryIconSelectGroup.classList.toggle('hidden', !isChecked); 
+                document.getElementById('new-category-recurring-group').classList.toggle('hidden', !isChecked); 
+                elements.newCategoryBudgetFieldsDiv.classList.toggle('hidden', isChecked); 
              }
              
-            // (Alpha 55) MODIFICATA
             function handlePresetToggleEdit() { 
                  if (elements.editCategoryIsPresetCheckbox.checked) { 
                     elements.editCategoryPresetValueGroup.classList.remove('hidden'); 
-                    elements.editCategoryIconSelectGroup.classList.remove('hidden'); // Mostra icone
+                    elements.editCategoryIconSelectGroup.classList.remove('hidden'); 
                     elements.editCategoryBudgetFieldsDiv.classList.add('hidden'); 
                 } 
                  else { 
                     elements.editCategoryPresetValueGroup.classList.add('hidden'); 
-                    elements.editCategoryIconSelectGroup.classList.add('hidden'); // Nascondi icone
+                    elements.editCategoryIconSelectGroup.classList.add('hidden'); 
                     elements.editCategoryBudgetFieldsDiv.classList.remove('hidden'); 
                 }
             }
@@ -2981,6 +2990,8 @@ function hideModal() {
                  if (!isNaN(budgetValue) && budgetValue >= 0) { state.globalMonthlyBudget = budgetValue; saveGlobalBudget(); showToast('Budget mensile salvato!'); renderHomeScreen(); } 
                  else { showModal('Errore', 'Valore budget non valido.', () => {}); }
              }
+
+            // --- FUNZIONI IMPORT/EXPORT ---
             function exportData() { 
                 try {
                     showToast("Preparazione file...");
@@ -2992,11 +3003,12 @@ function hideModal() {
                     a.href = url;
                     a.download = `spese_backup_${new Date().toISOString().split('T')[0]}.json`; 
                     document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url); 
-                    // (Alpha 27) Modificato messaggio toast
                     setTimeout(() => showToast("File pronto! Controlla i Download o scegli 'Salva su File'."), 500); 
                 } catch (error) { console.error("Errore esportazione:", error); showModal('Errore Esportazione', 'Problema during l\'esportazione.', () => {}); }
             }
+            
             function importData() { elements.importFileInput.click(); }
+            
             function handleFileImport(event) { 
                 const file = event.target.files[0];
                 if (!file) { return; }
@@ -3010,28 +3022,24 @@ function hideModal() {
                                 state.categories = importedData.categories || []; 
                                 state.expenses = importedData.expenses || []; 
                                 state.globalMonthlyBudget = importedData.globalMonthlyBudget || 0; 
-                                // Esegui migrazione dati su dati importati
                                 let needsSave = false;
                                 state.categories.forEach(cat => {
                                     if (cat.budget !== undefined) { cat.budgetType = 'weekly'; cat.budgetValue = cat.budget; delete cat.budget; needsSave = true; }
                                     if (!cat.budgetType) { cat.budgetType = 'none'; cat.budgetValue = null; needsSave = true; }
-                                    // (Alpha 39) Rinomina 'isSpecial' in 'isFixed' (Controllo migrazione)
                                     if (cat.isSpecial === undefined) { 
                                         cat.isSpecial = false; 
                                         cat.presetValue = null; 
                                         needsSave = true; 
                                     }
-                                     // (Alpha 55) Migrazione Icone
                                     if (cat.isSpecial && !cat.icon) {
-                                        cat.icon = 'euro'; // Icona di default
+                                        cat.icon = 'euro'; 
                                         needsSave = true;
                                     }
                                 });
-                                // --- Fine Migrazione ---
                                 saveCategories(); saveExpenses(); saveGlobalBudget(); 
                                 elements.importFileInput.value = null; 
                                 showToast('Dati importati!'); 
-                                navigate('home'); // Vai always alla home dopo l'import
+                                navigate('home'); 
                             });
                         } else { showModal('Errore File', 'Struttura file non valida.', () => {}); }
                     } catch (error) { console.error("Errore parsing JSON:", error); showModal('Errore File', 'Impossibile leggere il file JSON.', () => {}); }
@@ -3041,126 +3049,193 @@ function hideModal() {
                 reader.readAsText(file); 
             }
             
-            // --- COLLEGAMENTO PULSANTI ---
-            elements.addExpenseBtn.addEventListener('click', () => navigate('addCategory'));
-            elements.manageCategoriesBtnHome.addEventListener('click', () => navigate('manageCategories'));
+            function showManualExportData() {
+                try {
+                    const dataToExport = {
+                        categories: state.categories,
+                        expenses: state.expenses,
+                        globalMonthlyBudget: state.globalMonthlyBudget,
+                        appVersion: versionString,
+                        exportedAt: new Date().toISOString()
+                    };
+                    const dataString = JSON.stringify(dataToExport);
+                    elements.manualDataTextarea.value = dataString;
+                    showToast("Dati pronti! Fai 'Seleziona Tutto' e 'Copia'.");
+                    elements.manualDataTextarea.focus();
+                    elements.manualDataTextarea.select();
+                } catch (error) {
+                    console.error("Errore esportazione manuale:", error);
+                    showModal('Errore Esportazione', 'Problema during la preparazione dei dati.', () => {});
+                }
+            }
+            
+            function processManualImport() {
+                const dataString = elements.manualDataTextarea.value;
+                if (!dataString || dataString.trim() === '') {
+                    showModal('Errore', 'Nessun dato incollato nel box.', () => {});
+                    return;
+                }
+                showToast("Lettura dati...");
+                try {
+                    const importedData = JSON.parse(dataString);
+                    if (importedData && typeof importedData === 'object' && Array.isArray(importedData.categories) && Array.isArray(importedData.expenses)) {
+                        showModal('Conferma Importazione', `Stai per sovrascrivere i dati con ${importedData.categories.length} cat. e ${importedData.expenses.length} spese. Continuare?`, () => {
+                            state.categories = importedData.categories || [];
+                            state.expenses = importedData.expenses || [];
+                            state.globalMonthlyBudget = importedData.globalMonthlyBudget || 0;
+                            
+                            let needsSave = false;
+                            state.categories.forEach(cat => {
+                                if (cat.budget !== undefined) { cat.budgetType = 'weekly'; cat.budgetValue = cat.budget; delete cat.budget; needsSave = true; }
+                                if (!cat.budgetType) { cat.budgetType = 'none'; cat.budgetValue = null; needsSave = true; }
+                                if (cat.isSpecial === undefined) { cat.isSpecial = false; cat.presetValue = null; needsSave = true; }
+                                if (cat.isSpecial && !cat.icon) { cat.icon = 'euro'; needsSave = true; }
+                            });
+                            
+                            saveCategories();
+                            saveExpenses();
+                            saveGlobalBudget();
+                            elements.manualDataTextarea.value = ''; 
+                            showToast('Dati importati con successo!');
+                            navigate('home'); 
+                        });
+                    } else {
+                        showModal('Errore Dati', 'La struttura dei dati incollati non è valida.', () => {});
+                    }
+                } catch (error) {
+                    console.error("Errore parsing JSON manuale:", error);
+                    showModal('Errore Dati', 'Impossibile leggere il testo. Assicurati di aver copiato tutto.', () => {});
+                }
+            }
+            // --- FINE FUNZIONI IMPORT/EXPORT ---
+
+            // --- (Alpha 94) COLLEGAMENTO PULSANTI (Nuova Navigazione) ---
+            
+            // 1. Pulsanti della Tab Bar
+            elements.navBtnHome.addEventListener('click', () => navigate('home'));
+            elements.navBtnChart.addEventListener('click', () => navigate('chart'));
+            elements.navBtnAdd.addEventListener('click', () => navigate('addCategory')); // Il pulsante "Aggiungi" porta alla selezione categoria
+            elements.navBtnData.addEventListener('click', () => navigate('data'));
+            elements.navBtnManage.addEventListener('click', () => navigate('manageCategories'));
+            
+            // 2. Pulsanti interni
             elements.confirmExpenseBtn.addEventListener('click', addExpense); 
             elements.saveCategoryBtn.addEventListener('click', addCategory); 
-			// (Alpha 71) Ripristino pulsanti "Torna Indietro" e "Annulla"
+			
             backButtons.backToHomeFromAdd.addEventListener('click', () => navigate('home'));
             backButtons.backToHomeFromView.addEventListener('click', () => navigate('home'));
             backButtons.cancelAddAmount.addEventListener('click', () => navigate('addCategory')); 
             backButtons.backToHomeFromManage.addEventListener('click', () => navigate('home'));
             backButtons.backToViewFromDetail.addEventListener('click', () => navigate('viewExpenses'));                       
+            
             backButtons.backToHomeFromMonthly.addEventListener('click', () => navigate('home')); 
             backButtons.cancelEditCategory.addEventListener('click', () => { 
                 state.editingCategoryId = null; 
-                state.tempSelectedIcon = 'euro'; // Resetta
+                state.tempSelectedIcon = 'euro'; 
                 navigate('manageCategories'); 
             });
             elements.weeklyBox.addEventListener('click', () => navigate('viewExpenses'));
-            elements.monthlyBox.addEventListener('click', () => navigate('monthlyHistory'));
+            elements.monthlyBox.addEventListener('click', () => {
+                const now = new Date();
+                state.viewingMonth = now.getMonth();
+                state.viewingYear = now.getFullYear();
+                navigate('monthlyHistory');
+            });
             elements.newCategoryIsPresetCheckbox.addEventListener('change', handlePresetToggleAdd);
+            elements.confirmEditCategoryBtn.addEventListener('click', saveCategoryEdit); 
+            
+            // 3. Pulsanti Dati/Backup
             elements.exportBtn.addEventListener('click', exportData);
             elements.importBtn.addEventListener('click', importData);
             elements.importFileInput.addEventListener('change', handleFileImport);
+            elements.manualExportShowBtn.addEventListener('click', showManualExportData);
+            elements.manualImportProcessBtn.addEventListener('click', processManualImport);
+            
+            // 4. Altri pulsanti
             elements.saveGlobalBudgetBtn.addEventListener('click', handleSaveGlobalBudget); 
-            // (Alpha 36) Nuovi listener
-            elements.viewChartBtn.addEventListener('click', () => navigate('chart'));
             backButtons.backToHomeFromChart.addEventListener('click', () => navigate('home'));
+            backButtons.backToHomeFromData.addEventListener('click', () => navigate('home')); 
             backButtons.backToHistoryFromWeeklyDetail.addEventListener('click', () => navigate('monthlyHistory'));
-           
-            // (Alpha 37) Nuovo listener
             backButtons.backToWeeklyDetailFromCat.addEventListener('click', () => navigate('weeklyDetail'));
-
-
             // --- INIZIALIZZAZIONE ---
-			function applyRecurringExpenses() {
-  const now = new Date();
-  const currentMonth = now.getMonth();
-  const currentYear = now.getFullYear();
+			
+            function applyRecurringExpenses() {
+                const now = new Date();
+                const currentMonth = now.getMonth();
+                const currentYear = now.getFullYear();
 
-  const alreadyAdded = new Set(
-    state.expenses
-      .filter(e => e.recurring)
-      .map(e => `${e.categoryId}-${new Date(e.date).getMonth()}-${new Date(e.date).getFullYear()}`)
-  );
+                const recurringCategories = state.categories.filter(c => c.recurring === true);
+                if (recurringCategories.length === 0) return; 
 
-  state.expenses.forEach(e => {
-    if (e.recurring) {
-      const d = new Date(e.date);
-      const key = `${e.categoryId}-${currentMonth}-${currentYear}`;
-      if (!alreadyAdded.has(key) && (d.getMonth() !== currentMonth || d.getFullYear() !== currentYear)) {
-        state.expenses.push({
-          id: Date.now() + Math.floor(Math.random() * 1000),
-          categoryId: e.categoryId,
-          amount: e.amount,
-          note: e.note || '',
-          date: new Date().toISOString(),
-          recurring: true
-        });
-        alreadyAdded.add(key);
-      }
-    }
-  });
-  saveExpenses();
-}
-           // ... prima della funzione init() ...
+                // (v93) Crea prima un Set di ID delle categorie che ci interessano
+                const recurringCategoryIds = new Set(recurringCategories.map(c => c.id));
 
-            // --- (Alpha 65) GESTIONE TEMI ---
-            const themeSelector = document.getElementById('theme-selector');
-            const themeIcon = document.getElementById('theme-icon');
-            // (Alpha 66) Aggiornato array temi
+                // (v93) Cerca TUTTE le spese (indipendentemente dal flag 'recurring')
+                // che appartengono a quelle categorie e sono di questo mese
+                const addedThisMonth = new Set(
+                    state.expenses
+                        .filter(e => recurringCategoryIds.has(e.categoryId)) // Filtra solo per le categorie giuste
+                        .filter(e => {
+                            try {
+                                const d = new Date(e.date);
+                                return d.getMonth() === currentMonth && d.getFullYear() === currentYear;
+                            } catch (err) { return false; }
+                        })
+                        .map(e => e.categoryId) 
+                );
+
+                let expensesAdded = false;
+
+                recurringCategories.forEach(cat => {
+                    if (!addedThisMonth.has(cat.id)) {
+                        state.expenses.push({
+                            id: Date.now() + Math.floor(Math.random() * 1000), 
+                            categoryId: cat.id,
+                            amount: cat.presetValue || 0,
+                            note: 'Spesa ricorrente automatica',
+                            date: new Date().toISOString(),
+                            recurring: true 
+                        });
+                        expensesAdded = true;
+                    }
+                });
+
+                if (expensesAdded) {
+                    saveExpenses();
+                }
+            }
+            
+            // --- GESTIONE TEMI ---
             const allThemeClasses = [
-                'theme-light-default', 'theme-dark-default',
-                'theme-light-corporate', 'theme-dark-corporate',
-                'theme-light-laser', 'theme-dark-laser',
-                'theme-light-synth', 'theme-dark-synth',
-                'theme-light-graphite', 'theme-dark-graphite',
-                'theme-dark' // La classe "marker"
+                'theme-pro-light', 'theme-pro-dark',
+                'theme-dark' 
             ];
 
             function applyTheme(themeName) {
-                if (!themeSelector) return; 
 
-                // 1. Pulisce tutte le classi tema dal body
                 document.body.classList.remove(...allThemeClasses);
-
-                // 2. Aggiunge la classe del tema specifico
                 document.body.classList.add(themeName);
 
-                // 3. Aggiunge la classe marker "theme-dark" se è un tema scuro
                 if (themeName.includes('dark')) {
                     document.body.classList.add('theme-dark');
-                    if(themeIcon) themeIcon.textContent = '🌙';
+                    if(elements.themeToggleBtn) elements.themeToggleBtn.innerHTML = '<span>☀️</span>';
                 } else {
-                    if(themeIcon) themeIcon.textContent = '🎨';
+                    if(elements.themeToggleBtn) elements.themeToggleBtn.innerHTML = '<span>🌙</span>';
                 }
 
-                // 4. Salva la preferenza
                 try {
                     localStorage.setItem('app-theme', themeName);
                 } catch (e) {
                     console.error("Impossibile salvare il tema:", e);
                 }
-
-                // 5. Aggiorna il selettore (utile se chiamata da init)
-                themeSelector.value = themeName;
-                // ... (codice esistente)
                 
-                // 5. Aggiorna il selettore (utile se chiamata da init)
-                themeSelector.value = themeName;
-                
-                // 6. (Alpha 69) AGGIUNGI QUESTO BLOCCO:
-                // Aggiorna i grafici se sono attualmente visibili
                 if (state.currentScreen === 'chart') {
-                    // Diamo 50ms al DOM per aggiornare i CSS prima di ridisegnare
                     setTimeout(updateCharts, 50); 
                 }
-            } // <- Questa è la } di chiusura
+            } 
 
             function loadTheme() {
-                if (!themeSelector) return; 
+
                 let savedTheme = null;
                 try {
                     savedTheme = localStorage.getItem('app-theme');
@@ -3168,42 +3243,43 @@ function hideModal() {
                     console.error("Impossibile caricare il tema:", e);
                 }
 
-                // (Alpha 65) Migrazione da vecchio 'dark-mode'
                 if (!savedTheme) {
                     try {
                         const oldDarkMode = localStorage.getItem('dark-mode');
                         if (oldDarkMode === 'true') {
-                            savedTheme = 'theme-dark-default'; // Migra a nuovo tema scuro
-                            localStorage.removeItem('dark-mode'); // Pulisce vecchio setting
+                            savedTheme = 'theme-pro-dark'; 
+                            localStorage.removeItem('dark-mode'); 
                         } else if (oldDarkMode === 'false') {
-                            savedTheme = 'theme-light-default'; // Migra a nuovo tema chiaro
-                            localStorage.removeItem('dark-mode'); // Pulisce vecchio setting
+                            savedTheme = 'theme-pro-light'; 
+                            localStorage.removeItem('dark-mode'); 
                         }
                     } catch (e) { /* ignora */ }
                 }
                 
-                // Applica il tema salvato o il default
-                applyTheme(savedTheme || 'theme-light-default');
+                applyTheme(savedTheme || 'theme-pro-light');
             }
             // --- FINE GESTIONE TEMI ---
 
-
-            // --- INIZIALIZZAZIONE ---
-			
             function init() {
-                elements.appVersion.textContent = versionString; 
-                loadData(); // Carica da localStorage
-                loadTheme(); // (Alpha 65) AGGIUNGI QUESTA LINEA
-				applyRecurringExpenses(); // Duplica spese ricorrenti se necessario
-                navigate('home'); // Parte dalla schermata home
+                elements.appVersionFixed.textContent = versionString; 
+                loadData(); 
+                loadTheme(); 
+				applyRecurringExpenses(); 
+                navigate('home'); 
             }
 
             init(); // Avvia l'inizializzazione
 
-            // (Alpha 65) AGGIUNGI QUESTO LISTENER dopo init()
-            if (themeSelector) {
-                themeSelector.addEventListener('change', () => {
-                    applyTheme(themeSelector.value);
+            // (Alpha 98) Listener per il nuovo Toggle Icon
+            if (elements.themeToggleBtn) {
+                elements.themeToggleBtn.addEventListener('click', () => {
+                    // Controlla il tema attuale leggendo la classe del body
+                    const currentThemeIsDark = document.body.classList.contains('theme-pro-dark');
+                    if (currentThemeIsDark) {
+                        applyTheme('theme-pro-light');
+                    } else {
+                        applyTheme('theme-pro-dark');
+                    }
                 });
             }
         });
